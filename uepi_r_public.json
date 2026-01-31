@@ -1,0 +1,1 @@
+{"config_version": "redzone_v1_noimm_v1_causal", "end_utc": "2012-12-31T23:59:00+00:00", "generated_utc": "2026-01-31T03:50:41Z", "lead_hours_typical": 12, "lead_minutes": 1110.5, "red_alert": true, "rolling_mode": "causal", "run_id": "91092aa5-8c76-4dcb-a5fe-508156a7f1e0", "source": "noaa", "start_utc": "2009-12-30T00:00:00+00:00", "tier": "RED"}
