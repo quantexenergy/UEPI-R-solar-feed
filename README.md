@@ -16,6 +16,7 @@ Git commit history proves each alert was published **before** the flare occurred
 | Verified hits | **2** |
 | False alerts | 0 |
 | Hit rate | **100.0%** |
+| M-class hits | **2** |
 | Median lead time | **11h 57m** |
 
 ```diff
