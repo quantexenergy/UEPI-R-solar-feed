@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-02-10T05:05:23Z",
+  "updated_utc": "2026-02-10T05:13:21Z",
   "total_alerts": 2,
   "verified_hits": 2,
   "verified_false": 0,
   "pending": 0,
   "hit_rate": 1.0,
   "x_class_hits": 0,
-  "avg_lead_minutes": 1091.5,
-  "median_lead_minutes": 1091.5
+  "avg_lead_minutes": 717.5,
+  "median_lead_minutes": 717.5
 }
