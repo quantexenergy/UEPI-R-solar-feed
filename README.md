@@ -1,8 +1,8 @@
 # UEPI-R Solar Flare Early Warning
 
-> **RED ALERT** — Elevated solar flare risk detected. An M1.0+ flare is likely within the next 12-24 hours.
+> **RED ALERT** — Elevated solar flare risk detected. An M1.0+ flare is likely within the next 2-24 hours.
 
-*Last updated: 2026-02-10 05:53 UTC*
+*Last updated: 2026-02-10 08:08 UTC*
 *Data through: 2026-02-09 23:59 UTC*
 
 ---
