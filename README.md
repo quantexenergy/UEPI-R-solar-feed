@@ -2,7 +2,7 @@
 
 > **RED ALERT** — Elevated solar flare risk detected. An M1.0+ flare is likely within the next 2-24 hours.
 
-*Last updated: 2026-02-10 19:44 UTC*
+*Last updated: 2026-02-10 22:04 UTC*
 *Data through: 2026-02-09 23:59 UTC*
 
 ---
