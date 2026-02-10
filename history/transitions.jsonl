@@ -10,3 +10,7 @@
 {"alert": "off", "min_class": "M1.0", "time": "2026-02-09T04:57:00+00:00"}
 {"alert": "on", "min_class": "M1.0", "time": "2026-02-09T18:17:00+00:00"}
 {"alert": "off", "min_class": "M1.0", "time": "2026-02-09T23:59:00+00:00"}
+{"alert": "on", "min_class": "M1.0", "time": "2026-02-09T01:57:00+00:00"}
+{"alert": "off", "min_class": "M1.0", "time": "2026-02-09T04:57:00+00:00"}
+{"alert": "on", "min_class": "M1.0", "time": "2026-02-09T18:17:00+00:00"}
+{"alert": "off", "min_class": "M1.0", "time": "2026-02-09T23:59:00+00:00"}
