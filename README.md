@@ -2,7 +2,7 @@
 
 > **QUIET** — No elevated flare risk detected.
 
-*Last updated: 2026-02-11 08:05 UTC*
+*Last updated: 2026-02-11 11:13 UTC*
 *Data through: 2026-02-10 23:59 UTC*
 
 ---
