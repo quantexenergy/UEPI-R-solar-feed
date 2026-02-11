@@ -1,1 +1,1 @@
-{"data_end_utc": "2026-02-10T23:59:00+00:00", "data_start_utc": "2026-02-10T00:00:00+00:00", "detector_version": "2.2", "generated_utc": "2026-02-11T05:47:52Z", "median_lead_minutes": null, "min_class": "M1.0", "red_alert": false, "source": "noaa", "status_summary": "No active alerts"}
+{"data_end_utc": "2026-02-10T23:59:00+00:00", "data_start_utc": "2026-02-10T00:00:00+00:00", "detector_version": "2.2", "generated_utc": "2026-02-11T08:05:36Z", "median_lead_minutes": null, "min_class": "M1.0", "red_alert": false, "source": "noaa", "status_summary": "No active alerts"}
