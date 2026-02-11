@@ -1,4 +1,4 @@
-{"alert_time": "2026-02-08T04:39:00+00:00", "flare_class": "M2.8", "flare_time": "2026-02-09T02:14:00Z", "lead_minutes": 1295.0, "result": "hit", "verified_utc": "2026-02-10T05:47:30Z"}
-{"alert_time": "2026-02-08T11:26:00+00:00", "flare_class": "M2.7", "flare_time": "2026-02-08T13:46:00Z", "lead_minutes": 140.0, "result": "hit", "verified_utc": "2026-02-10T05:47:30Z"}
-{"alert_time": "2026-02-09T01:57:00+00:00", "result": "false_alert", "verified_utc": "2026-02-10T05:53:55Z"}
-{"alert_time": "2026-02-09T18:17:00+00:00", "result": "false_alert", "verified_utc": "2026-02-10T19:44:41Z"}
+{"alert_time": "2026-02-08T11:26:00+00:00", "flare_class": "M1.7", "flare_time": "2026-02-08T11:32:00Z", "lead_minutes": 6.0, "result": "hit", "verified_utc": "2026-02-11T18:39:12Z"}
+{"alert_time": "2026-02-09T01:57:00+00:00", "flare_class": "M2.8", "flare_time": "2026-02-09T02:14:00Z", "lead_minutes": 17.0, "result": "hit", "verified_utc": "2026-02-11T18:39:12Z"}
+{"alert_time": "2026-02-08T04:39:00+00:00", "flare_class": "M1.8", "flare_time": "2026-02-08T11:13:00Z", "lead_minutes": 394.0, "result": "hit", "verified_utc": "2026-02-11T18:39:12Z"}
+{"alert_time": "2026-02-09T18:17:00+00:00", "result": "false_alert", "verified_utc": "2026-02-11T18:39:12Z"}
