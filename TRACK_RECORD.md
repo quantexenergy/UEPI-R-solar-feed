@@ -11,7 +11,7 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | M-class hit rate | **50.0%** (2/4) |
 | False alerts | 2/4 |
 | Median lead time | **11h 57m** |
-| Last updated | 2026-02-10T22:04:15Z |
+| Last updated | 2026-02-11T00:03:12Z |
 
 ## Alert Log
 
