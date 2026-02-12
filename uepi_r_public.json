@@ -1,1 +1,1 @@
-{"data_stale": false, "detector_version": "2.2", "generated_utc": "2026-02-12T16:32:54.439398+00:00", "min_class": "M1.0", "red_alert": false, "source": "noaa", "status_summary": "No active alerts"}
+{"data_stale": true, "detector_version": "2.2", "generated_utc": "2026-02-12T17:25:50.156257+00:00", "min_class": "M1.0", "red_alert": false, "source": "noaa", "status_summary": "No active alerts (data stale)"}
