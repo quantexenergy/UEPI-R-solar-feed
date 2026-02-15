@@ -17,8 +17,7 @@ Git commit history proves each alert was published **before** the flare occurred
 | M-class hit rate | **60.0%** (6/10) |
 | False alerts | 4/10 |
 | Median lead time | **5h 45m** |
-| Backtest M-class coverage | **69.5%** (2010--2025, 16 years) |
-| Backtest X-class coverage | **97.2%** (137/141) |
+| M-class coverage | **66.7%** (6/9 flares since Feb 8) |
 | Pending | 1 |
 
 ```diff
