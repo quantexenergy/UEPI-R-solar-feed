@@ -13,7 +13,7 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | False alerts | 9/16 |
 | Median lead time | **6h 34m** |
 | Pending verification | 2 |
-| Last updated | 2026-02-18T23:04:00Z |
+| Last updated | 2026-02-19T00:00:18Z |
 
 ## Event Log
 
