@@ -2,7 +2,7 @@
 
 > **QUIET** — No elevated flare risk detected.
 
-*Last updated: 2026-02-20 19:50 UTC*
+*Last updated: 2026-02-20 20:57 UTC*
 
 ---
 
@@ -15,12 +15,13 @@ Git commit history proves each alert was published **before** the flare occurred
 |--------|-------|
 | Verified hits | **7** |
 | M-class coverage | **70.0%** (7/10 flares) |
-| M-class hit rate | **36.8%** (7/19) |
-| False alerts | 12/19 |
+| M-class hit rate | **35.0%** (7/20) |
+| False alerts | 13/20 |
 | Median lead time | **6h 34m** |
-| Pending | 3 |
+| Pending | 2 |
 
 ```diff
+- FALSE Alert: 2026-02-19 19:53 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-19 07:55 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-18 20:03 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-18 00:00 UTC  |  No M1.0+ flare within 24h
