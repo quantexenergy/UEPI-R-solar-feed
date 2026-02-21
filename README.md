@@ -3,7 +3,7 @@
 > **QUIET** — No elevated flare risk detected.
 
 ```
-2026-02-21 16:05 UTC | Status: QUIET | P(M1+ 24h): 5.6%
+2026-02-21 16:09 UTC | Status: QUIET | P(M1+ 24h): 5.6%
 ```
 
 
@@ -62,6 +62,16 @@ and identifies solar instability conditions **before** major solar flares (M1.0+
 - **Automated** — Runs every 15 minutes via GitHub Actions.
 - **Verified** — Every alert is cross-referenced against NOAA's official flare event list.
 - **Probabilistic** — Continuous P(M1.0+ flare within 24h) calibrated on 16 years of GOES data (Brier score: 0.098).
+
+### Flare Probability Guide
+
+| Probability | Risk Level | Typical Conditions |
+|-------------|------------|-------------------|
+| < 5% | **Low** | Quiet Sun. Background flux at A/B-class levels. |
+| 5-15% | **Elevated** | Minor activity. C-class flaring or rising baseline flux. |
+| 15-40% | **Moderate** | Significant activity. Active regions producing C/M-class precursors. |
+| 40-70% | **High** | Major flare likely. RED alert typically active. |
+| > 70% | **Very High** | Strong flare expected. X-class possible. |
 
 ### Backtested Performance (2010-2025)
 
