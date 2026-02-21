@@ -2,7 +2,7 @@
 
 > **RED ALERT** — Elevated solar flare risk detected. An M1.0+ flare is likely within the next 2-24 hours.
 
-*Last updated: 2026-02-21 13:54 UTC*
+*Last updated: 2026-02-21 14:55 UTC*
 
 ---
 
@@ -15,12 +15,13 @@ Git commit history proves each alert was published **before** the flare occurred
 |--------|-------|
 | Verified hits | **7** |
 | M-class coverage | **70.0%** (7/10 flares) |
-| M-class hit rate | **33.3%** (7/21) |
-| False alerts | 14/21 |
+| M-class hit rate | **31.8%** (7/22) |
+| False alerts | 15/22 |
 | Median lead time | **6h 34m** |
-| Pending | 3 |
+| Pending | 2 |
 
 ```diff
+- FALSE Alert: 2026-02-20 14:24 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-20 05:07 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-19 19:53 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-19 07:55 UTC  |  No M1.0+ flare within 24h
