@@ -2,7 +2,10 @@
 
 > **QUIET** — No elevated flare risk detected.
 
-*Last updated: 2026-02-21 15:49 UTC*
+```
+2026-02-21 16:05 UTC | Status: QUIET | P(M1+ 24h): 5.6%
+```
+
 
 ---
 
@@ -58,6 +61,7 @@ and identifies solar instability conditions **before** major solar flares (M1.0+
 - **Causal** — No future data used. Strictly real-time compatible.
 - **Automated** — Runs every 15 minutes via GitHub Actions.
 - **Verified** — Every alert is cross-referenced against NOAA's official flare event list.
+- **Probabilistic** — Continuous P(M1.0+ flare within 24h) calibrated on 16 years of GOES data (Brier score: 0.098).
 
 ### Backtested Performance (2010-2025)
 
