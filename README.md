@@ -3,7 +3,7 @@
 > **QUIET** — No elevated flare risk detected.
 
 ```
-2026-02-21 16:09 UTC | Status: QUIET | P(M1+ 24h): 5.6%
+2026-02-21 16:10 UTC | Status: QUIET | P(M1+ 24h): 5.6%
 ```
 
 
