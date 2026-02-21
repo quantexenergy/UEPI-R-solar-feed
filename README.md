@@ -3,7 +3,7 @@
 > **QUIET** — No elevated flare risk detected.
 
 ```
-2026-02-21 16:10 UTC | Status: QUIET | P(M1+ 24h): 5.6%
+2026-02-21 16:13 UTC | Status: QUIET | P(M1+ 24h): 5.6%
 ```
 
 
@@ -53,17 +53,19 @@ Git commit history proves each alert was published **before** the flare occurred
 
 ---
 
-## About UEPI-R
+## Backtested Performance (2010-2025)
 
-UEPI-R is a causal regime detection system that monitors NOAA GOES X-ray satellite data in real time
-and identifies solar instability conditions **before** major solar flares (M1.0+) occur.
+Validated on 16 years of NOAA/GOES XRS data:
 
-- **Causal** — No future data used. Strictly real-time compatible.
-- **Automated** — Runs every 15 minutes via GitHub Actions.
-- **Verified** — Every alert is cross-referenced against NOAA's official flare event list.
-- **Probabilistic** — Continuous P(M1.0+ flare within 24h) calibrated on 16 years of GOES data (Brier score: 0.098).
+| Metric | Value |
+|--------|-------|
+| **X-class coverage** | **97.2%** (137/141 X-class flares detected) |
+| **M-class coverage** | **69.5%** |
+| Precision | 39.6% |
+| False alerts | 0.36/day |
+| Median lead time | ~6 hours |
 
-### Flare Probability Guide
+## Flare Probability Guide
 
 | Probability | Risk Level | Typical Conditions |
 |-------------|------------|-------------------|
@@ -73,17 +75,17 @@ and identifies solar instability conditions **before** major solar flares (M1.0+
 | 40-70% | **High** | Major flare likely. RED alert typically active. |
 | > 70% | **Very High** | Strong flare expected. X-class possible. |
 
-### Backtested Performance (2010-2025)
+---
 
-Validated on 16 years of NOAA/GOES XRS data:
+## About UEPI-R
 
-| Metric | Value |
-|--------|-------|
-| X-class coverage | 97.2% (137/141) |
-| M-class coverage | 69.5% |
-| Precision | 39.6% |
-| False alerts | 0.36/day |
-| Median lead time | ~6 hours |
+UEPI-R is a causal regime detection system that monitors NOAA GOES X-ray satellite data in real time
+and identifies solar instability conditions **before** major solar flares (M1.0+) occur.
+
+- **Causal** — No future data used. Strictly real-time compatible.
+- **Automated** — Runs every 15 minutes via GitHub Actions.
+- **Verified** — Every alert is cross-referenced against NOAA's official flare event list.
+- **Probabilistic** — Continuous P(M1.0+ flare within 24h) calibrated via logistic regression on 8 diagnostic features across 16 years of GOES data (Brier score: 0.098).
 
 ---
 
