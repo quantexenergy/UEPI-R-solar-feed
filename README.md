@@ -1,27 +1,59 @@
 # UEPI-R Solar Flare Early Warning
 
-> **QUIET** — No elevated flare risk detected.
+Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-02-22 18:39 UTC | Status: QUIET | P(M1+ 24h): 7.3%
+2026-02-22 18:50 UTC | Status: QUIET | P(M1.0+ within 24h): 7.3%
 ```
-
 
 ---
 
-## Verified Track Record
+## Scientific Validation
 
-Every alert is automatically verified against [NOAA's official flare event list](https://services.swpc.noaa.gov/json/goes/primary/xray-flares-7-day.json) after 24 hours.
-Git commit history proves each alert was published **before** the flare occurred.
+Castillo, A. (2026). *UEPI-R: Real-Time Early Warning for M- and X-Class Solar Flares Using Causal Regime Detection on GOES XRS Data.*
+DOI: [10.22541/essoar.177177373.33605226/v1](https://doi.org/10.22541/essoar.177177373.33605226/v1)
+
+Validated on 16 years (2010-2025) of NOAA GOES XRS data.
+
+| Metric | Value |
+|--------|-------|
+| X-class coverage | **97.2%** (137/141) |
+| M/X coverage | 64-71% (matching dependent) |
+| Precision | 39.6% |
+| False alert rate | 0.36/day |
+| Day-level TSS | 0.41 |
+| Median lead time | 2.4-4.3 hours |
+
+UEPI-R is a continuous onset-warning system, not a 24-hour binary classifier.
+
+---
+
+## Live Operational Track Record
+
+All alerts are automatically verified against [NOAA's official flare list](https://services.swpc.noaa.gov/json/goes/primary/xray-flares-7-day.json) after a 24-hour hazard window.
 
 | Metric | Value |
 |--------|-------|
 | Verified hits | **7** |
-| M-class coverage | **70.0%** (7/10 flares) |
-| M-class hit rate | **29.2%** (7/24) |
-| False alerts | 17/24 |
+| Total M1.0+ flares | 10 |
+| Coverage | **70.0%** |
+| Precision | 7/24 alerts (29.2%) |
+| False alerts | 17 |
 | Median lead time | **6h 34m** |
 | Pending | 2 |
+
+### Verification Rules
+
+- **Flare threshold:** GOES class >= M1.0 (NOAA classification)
+- **Hazard window:** 24 hours from alert onset
+- **Hit:** First >= M1.0 flare within hazard window
+- **False alert:** No >= M1.0 flare within 24h
+- **Miss:** Flare with no active alert at onset
+- **Pending:** Hazard window not yet expired
+
+All alerts are timestamped via Git commits prior to flare occurrence.
+
+Full log: [`TRACK_RECORD.md`](TRACK_RECORD.md)
 
 ```diff
 - FALSE Alert: 2026-02-21 09:56 UTC  |  No M1.0+ flare within 24h
@@ -55,66 +87,48 @@ Git commit history proves each alert was published **before** the flare occurred
 
 ---
 
-## Backtested Performance (2010-2025)
+## What UEPI-R Does
 
-Validated on 16 years of NOAA/GOES XRS data:
+UEPI-R performs causal regime detection on full-disk GOES XRS irradiance data.
 
-| Metric | Value |
-|--------|-------|
-| **X-class coverage** | **97.2%** (137/141 X-class flares detected) |
-| **M-class coverage** | **69.5%** |
-| Precision | 39.6% |
-| False alerts | 0.36/day |
-| Median lead time | ~6 hours |
+- XRS-only input (no magnetograms)
+- Fully causal (no future data)
+- Continuous minute-resolution alerting
+- Multi-tier alert states
+- Logistic-calibrated probability output (Brier score: 0.098)
 
-## Flare Probability Guide
+Runs automatically every 15 minutes via GitHub Actions.
 
-| Probability | Risk Level | Typical Conditions |
-|-------------|------------|-------------------|
-| < 5% | **Low** | Quiet Sun. Background flux at A/B-class levels. |
-| 5-15% | **Elevated** | Minor activity. C-class flaring or rising baseline flux. |
-| 15-40% | **Moderate** | Significant activity. Active regions producing C/M-class precursors. |
-| 40-70% | **High** | Major flare likely. RED alert typically active. |
-| > 70% | **Very High** | Strong flare expected. X-class possible. |
+## Probability Interpretation
 
----
-
-## About UEPI-R
-
-UEPI-R is a causal regime detection system that monitors NOAA GOES X-ray satellite data in real time
-and identifies solar instability conditions **before** major solar flares (M1.0+) occur.
-
-- **Causal** — No future data used. Strictly real-time compatible.
-- **Automated** — Runs every 15 minutes via GitHub Actions.
-- **Verified** — Every alert is cross-referenced against NOAA's official flare event list.
-- **Probabilistic** — Continuous P(M1.0+ flare within 24h) calibrated via logistic regression on 8 diagnostic features across 16 years of GOES data (Brier score: 0.098).
+| P(M1.0+ 24h) | Risk Level |
+|--------------|------------|
+| < 5% | Low |
+| 5-15% | Elevated |
+| 15-40% | Moderate |
+| 40-70% | High |
+| > 70% | Very High |
 
 ---
 
-## Data Files
+## API Access
+
+```bash
+curl -s https://raw.githubusercontent.com/quantexenergy/UEPI-R-solar-feed/main/uepi_r_public.json
+```
 
 | File | Description |
 |------|-------------|
 | [`uepi_r_public.json`](uepi_r_public.json) | Current alert state |
-| [`uepi_r_public_transitions.json`](uepi_r_public_transitions.json) | Recent alert transitions |
-| [`verified_scorecard.json`](verified_scorecard.json) | Verification statistics |
-| [`TRACK_RECORD.md`](TRACK_RECORD.md) | Full alert log with verification |
-| [`history/transitions.jsonl`](history/transitions.jsonl) | Complete transition history |
-| [`history/verified.jsonl`](history/verified.jsonl) | Complete verification log |
-
-## Quick Start
-
-```bash
-# Check current status
-curl -s https://raw.githubusercontent.com/quantexenergy/UEPI-R-solar-feed/main/uepi_r_public.json | python3 -m json.tool
-```
+| [`uepi_r_public_transitions.json`](uepi_r_public_transitions.json) | Recent transitions |
+| [`verified_scorecard.json`](verified_scorecard.json) | Live verification stats |
+| [`history/transitions.jsonl`](history/transitions.jsonl) | Full alert history |
+| [`history/verified.jsonl`](history/verified.jsonl) | Full verification log |
 
 ---
 
-**Paper:** Castillo, A. (2026). [UEPI-R Solar Flares: Real-Time Early Warning for M- and X-Class Events Using Causal Regime Detection on GOES XRS Data.](https://doi.org/10.22541/essoar.177177373.33605226/v1) *ESS Open Archive.*
-
 **Data source:** [NOAA GOES X-Ray Sensor (XRS)](https://www.swpc.noaa.gov/products/goes-x-ray-flux) — GOES-16/17/18 satellites
 
-**Patent:** US Provisional Application No. 63/949,419 (December 28, 2025)
+**Intellectual Property:** U.S. Provisional Application No. 63/949,419 (Dec 28, 2025)
 
 **[Quantex Energy](https://github.com/quantexenergy)**
