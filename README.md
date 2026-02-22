@@ -1,9 +1,9 @@
 # UEPI-R Solar Flare Early Warning
 
-> **QUIET** — No elevated flare risk detected.
+> **RED ALERT** — Elevated solar flare risk detected. An M1.0+ flare is likely within the next 2-24 hours.
 
 ```
-2026-02-21 23:56 UTC | Status: QUIET | P(M1+ 24h): 7.3%
+2026-02-22 01:47 UTC | Status: RED   | P(M1+ 24h): 7.3%
 ```
 
 
@@ -21,7 +21,7 @@ Git commit history proves each alert was published **before** the flare occurred
 | M-class hit rate | **31.8%** (7/22) |
 | False alerts | 15/22 |
 | Median lead time | **6h 34m** |
-| Pending | 2 |
+| Pending | 3 |
 
 ```diff
 - FALSE Alert: 2026-02-20 14:24 UTC  |  No M1.0+ flare within 24h
