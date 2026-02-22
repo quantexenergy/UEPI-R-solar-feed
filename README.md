@@ -3,7 +3,7 @@
 > **QUIET** — No elevated flare risk detected.
 
 ```
-2026-02-22 18:27 UTC | Status: QUIET | P(M1+ 24h): 7.3%
+2026-02-22 18:39 UTC | Status: QUIET | P(M1+ 24h): 7.3%
 ```
 
 
@@ -111,7 +111,7 @@ curl -s https://raw.githubusercontent.com/quantexenergy/UEPI-R-solar-feed/main/u
 
 ---
 
-**Paper:** Castillo, A. (2025). [UEPI-R Solar Flares: Real-Time Early Warning for M- and X-Class Events Using Causal Regime Detection on GOES XRS Data.](https://doi.org/10.22541/essoar.177177373.33605226/v1) *ESS Open Archive.*
+**Paper:** Castillo, A. (2026). [UEPI-R Solar Flares: Real-Time Early Warning for M- and X-Class Events Using Causal Regime Detection on GOES XRS Data.](https://doi.org/10.22541/essoar.177177373.33605226/v1) *ESS Open Archive.*
 
 **Data source:** [NOAA GOES X-Ray Sensor (XRS)](https://www.swpc.noaa.gov/products/goes-x-ray-flux) — GOES-16/17/18 satellites
 
