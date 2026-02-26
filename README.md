@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-02-26 20:33 UTC | Status: RED   | P(M1.0+ within 24h): 28.0%
+2026-02-26 20:38 UTC | Status: RED   | P(M1.0+ within 24h): 28.0%
 ```
 
 ---
@@ -106,13 +106,19 @@ Runs automatically every 15 minutes via GitHub Actions.
 
 ## Probability Interpretation
 
-| P(M1.0+ 24h) | Risk Level |
-|--------------|------------|
-| < 5% | Low |
-| 5-15% | Elevated |
-| 15-40% | Moderate |
-| 40-70% | High |
-| > 70% | Very High |
+The climatological base rate is ~20%: roughly one in five 15-minute samples falls within 24 hours of an M1.0+ flare. Probabilities are isotonically calibrated against 2010-2025 GOES data (Brier skill score 0.38).
+
+| P(M1.0+ 24h) | Level | Backtest observed rate | Time in tier |
+|---|---|---|---|
+| < 5% | Low | ~2% | ~54% |
+| 5-20% | Elevated | ~10% | ~10% |
+| 20-50% | Moderate | ~30% | ~21% |
+| 50-80% | High | ~65% | ~11% |
+| > 80% | Very High | ~90% | ~4% |
+
+- The 20% base rate means "Moderate" starts at above-average risk.
+- `red_alert: true` typically corresponds to probabilities above 20-30%.
+- Probabilities are calibrated: a 40% reading means ~40% of similar moments in 2010-2025 were followed by an M1.0+ flare within 24 hours.
 
 ---
 
