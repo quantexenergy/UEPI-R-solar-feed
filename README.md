@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-02-27 15:30 UTC | Status: QUIET | P(M1.0+ within 24h): 28.8%
+2026-02-27 15:40 UTC | Status: QUIET | P(M1.0+ within 24h): 28.8%
 ```
 
 ---
@@ -120,6 +120,8 @@ The climatological base rate is ~20%: roughly one in five 15-minute samples fall
 - The 20% base rate means "Moderate" starts at above-average risk.
 - `red_alert: true` typically corresponds to probabilities above 20-30%.
 - Probabilities are calibrated: a 40% reading means ~40% of similar moments in 2010-2025 were followed by an M1.0+ flare within 24 hours.
+
+**`red_alert` vs `flare_probability`:** The probability reflects overall environmental risk (dominated by background flux level). The `red_alert` flag detects specific onset signatures (rapid flux rise + spectral hardening). A high probability with `red_alert: false` means elevated background risk without an active onset; a lower probability with `red_alert: true` means an onset was detected despite modest background levels.
 
 ---
 
