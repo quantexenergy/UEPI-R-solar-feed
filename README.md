@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-02-28 23:54 UTC | Status: RED   | P(M1.0+ within 24h): 38.6%
+2026-02-28 23:59 UTC | Status: RED   | P(M1.0+ within 24h): 38.6%
 ```
 
 ---
@@ -39,6 +39,7 @@ All alerts are automatically verified against [NOAA's official flare list](https
 | Coverage | **72.7%** |
 | Precision | 8/33 alerts (24.2%) |
 | False alerts | 25 |
+| C-class associated | 7/25 false alerts |
 | Median lead time | **8h 20m** |
 | Pending | 3 |
 
@@ -56,17 +57,17 @@ All alerts are timestamped via Git commits prior to flare occurrence.
 Full log: [`TRACK_RECORD.md`](TRACK_RECORD.md)
 
 ```diff
-- FALSE Alert: 2026-02-27 19:53 UTC  |  No M1.0+ flare within 24h
-- FALSE Alert: 2026-02-27 09:29 UTC  |  No M1.0+ flare within 24h
-- FALSE Alert: 2026-02-26 19:24 UTC  |  No M1.0+ flare within 24h
-- FALSE Alert: 2026-02-26 09:21 UTC  |  No M1.0+ flare within 24h
+! C-ASSOCIATED Alert: 2026-02-27 19:53 UTC  |  No M1.0+ (C6.4 at 02:56)
+! C-ASSOCIATED Alert: 2026-02-27 09:29 UTC  |  No M1.0+ (C6.4 at 02:56)
+! C-ASSOCIATED Alert: 2026-02-26 19:24 UTC  |  No M1.0+ (C3.5 at 12:47)
+! C-ASSOCIATED Alert: 2026-02-26 09:21 UTC  |  No M1.0+ (C6.3 at 18:56)
 - FALSE Alert: 2026-02-25 15:59 UTC  |  No M1.0+ flare within 24h
 + HIT  Alert: 2026-02-25 05:27 UTC  |  Flare: M2.3 at 2026-02-25 15:35 UTC  |  Lead: 10h 07m
 - FALSE Alert: 2026-02-23 11:53 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-22 07:06 UTC  |  No M1.0+ flare within 24h
-- FALSE Alert: 2026-02-22 01:47 UTC  |  No M1.0+ flare within 24h
-- FALSE Alert: 2026-02-21 09:56 UTC  |  No M1.0+ flare within 24h
-- FALSE Alert: 2026-02-21 04:53 UTC  |  No M1.0+ flare within 24h
+! C-ASSOCIATED Alert: 2026-02-22 01:47 UTC  |  No M1.0+ (C2.2 at 06:20)
+! C-ASSOCIATED Alert: 2026-02-21 09:56 UTC  |  No M1.0+ (C2.2 at 06:20)
+! C-ASSOCIATED Alert: 2026-02-21 04:53 UTC  |  No M1.0+ (C1.2 at 00:26)
 - FALSE Alert: 2026-02-20 14:24 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-20 05:07 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-19 19:53 UTC  |  No M1.0+ flare within 24h
