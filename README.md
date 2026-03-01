@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-03-01 21:55 UTC | Status: QUIET | P(M1.0+ within 24h): 46.7%
+2026-03-01 22:10 UTC | Status: RED   | P(M1.0+ within 24h): 47.0%
 ```
 
 ---
@@ -41,7 +41,7 @@ All alerts are automatically verified against [NOAA's official flare list](https
 | False alerts | 28 |
 | C-class associated | 21/28 false alerts |
 | Median lead time | **8h 20m** |
-| Pending | 3 |
+| Pending | 4 |
 
 ### Verification Rules
 
