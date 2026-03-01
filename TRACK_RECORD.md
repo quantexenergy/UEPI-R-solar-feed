@@ -14,7 +14,7 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | C-class associated | 20/27 false alerts |
 | Median lead time | **8h 20m** |
 | Pending verification | 4 |
-| Last updated | 2026-03-01T21:10:09Z |
+| Last updated | 2026-03-01T21:15:35Z |
 
 ## Event Log
 
