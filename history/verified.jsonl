@@ -1,23 +1,23 @@
 {"alert_time": "2026-02-08T11:26:00+00:00", "flare_class": "M1.7", "flare_time": "2026-02-08T11:32:00Z", "lead_minutes": 6.0, "result": "hit", "verified_utc": "2026-02-11T18:39:12Z"}
 {"alert_time": "2026-02-09T01:57:00+00:00", "flare_class": "M2.8", "flare_time": "2026-02-09T02:14:00Z", "lead_minutes": 17.0, "result": "hit", "verified_utc": "2026-02-11T18:39:12Z"}
 {"alert_time": "2026-02-08T04:39:00+00:00", "flare_class": "M1.8", "flare_time": "2026-02-08T11:13:00Z", "lead_minutes": 394.0, "result": "hit", "verified_utc": "2026-02-11T18:39:12Z"}
-{"alert_time": "2026-02-09T18:17:00+00:00", "result": "false_alert", "verified_utc": "2026-02-11T18:39:12Z"}
+{"alert_time": "2026-02-09T18:17:00+00:00", "c_class": "C9.2", "c_class_time": "2026-02-09T22:53:00Z", "result": "false_alert", "verified_utc": "2026-02-11T18:39:12Z"}
 {"alert_time": "2026-02-11T07:50:00+00:00", "flare_class": "M1.4", "flare_time": "2026-02-11T12:47:00Z", "lead_minutes": 297.0, "result": "hit", "verified_utc": "2026-02-12T07:59:45Z"}
 {"alert_time": "2026-02-11T13:00:00+00:00", "flare_class": "M1.4", "flare_time": "2026-02-12T02:29:00Z", "lead_minutes": 809.0, "result": "hit", "verified_utc": "2026-02-12T15:10:28Z"}
 {"alert_time": "2026-02-12T18:10:39.438490+00:00", "flare_class": "M1.0", "flare_time": "2026-02-13T08:28:00Z", "lead_minutes": 857.3, "result": "hit", "verified_utc": "2026-02-13T18:48:04Z"}
 {"alert_time": "2026-02-13T00:00:43.867750+00:00", "result": "false_alert", "verified_utc": "2026-02-14T05:00:45Z"}
-{"alert_time": "2026-02-13T11:49:13.701862+00:00", "result": "false_alert", "verified_utc": "2026-02-14T11:59:23Z"}
-{"alert_time": "2026-02-14T11:45:04.075868+00:00", "result": "false_alert", "verified_utc": "2026-02-15T11:58:35Z"}
+{"alert_time": "2026-02-13T11:49:13.701862+00:00", "c_class": "C6.0", "c_class_time": "2026-02-14T11:02:00Z", "result": "false_alert", "verified_utc": "2026-02-14T11:59:23Z"}
+{"alert_time": "2026-02-14T11:45:04.075868+00:00", "c_class": "C1.2", "c_class_time": "2026-02-15T07:19:00Z", "result": "false_alert", "verified_utc": "2026-02-15T11:58:35Z"}
 {"alert_time": "2026-02-15T08:02:17.400843+00:00", "flare_class": "M2.4", "flare_time": "2026-02-16T04:03:00Z", "lead_minutes": 1200.7, "result": "hit", "verified_utc": "2026-02-16T08:02:43Z"}
 {"alert_time": "2026-02-15T21:49:51.260914+00:00", "result": "false_alert", "verified_utc": "2026-02-16T21:56:08Z"}
-{"alert_time": "2026-02-16T14:13:32.827067+00:00", "result": "false_alert", "verified_utc": "2026-02-17T15:09:37Z"}
-{"alert_time": "2026-02-17T05:14:31.609470+00:00", "result": "false_alert", "verified_utc": "2026-02-18T05:26:14Z"}
-{"alert_time": "2026-02-17T10:32:06.502533+00:00", "result": "false_alert", "verified_utc": "2026-02-18T12:02:50Z"}
-{"alert_time": "2026-02-17T18:08:56.921858+00:00", "result": "false_alert", "verified_utc": "2026-02-18T20:03:15Z"}
-{"alert_time": "2026-02-18T00:00:30.249726+00:00", "result": "false_alert", "verified_utc": "2026-02-19T05:14:38Z"}
-{"alert_time": "2026-02-18T20:03:14.162597+00:00", "result": "false_alert", "verified_utc": "2026-02-19T21:03:33Z"}
-{"alert_time": "2026-02-19T07:55:49.754978+00:00", "result": "false_alert", "verified_utc": "2026-02-20T10:01:08Z"}
-{"alert_time": "2026-02-19T19:53:22.630496+00:00", "result": "false_alert", "verified_utc": "2026-02-20T20:57:38Z"}
+{"alert_time": "2026-02-16T14:13:32.827067+00:00", "c_class": "C1.0", "c_class_time": "2026-02-17T04:43:00Z", "result": "false_alert", "verified_utc": "2026-02-17T15:09:37Z"}
+{"alert_time": "2026-02-17T05:14:31.609470+00:00", "c_class": "C1.8", "c_class_time": "2026-02-17T23:07:00Z", "result": "false_alert", "verified_utc": "2026-02-18T05:26:14Z"}
+{"alert_time": "2026-02-17T10:32:06.502533+00:00", "c_class": "C1.8", "c_class_time": "2026-02-17T23:07:00Z", "result": "false_alert", "verified_utc": "2026-02-18T12:02:50Z"}
+{"alert_time": "2026-02-17T18:08:56.921858+00:00", "c_class": "C1.8", "c_class_time": "2026-02-17T23:07:00Z", "result": "false_alert", "verified_utc": "2026-02-18T20:03:15Z"}
+{"alert_time": "2026-02-18T00:00:30.249726+00:00", "c_class": "C2.2", "c_class_time": "2026-02-18T20:17:00Z", "result": "false_alert", "verified_utc": "2026-02-19T05:14:38Z"}
+{"alert_time": "2026-02-18T20:03:14.162597+00:00", "c_class": "C2.2", "c_class_time": "2026-02-18T20:17:00Z", "result": "false_alert", "verified_utc": "2026-02-19T21:03:33Z"}
+{"alert_time": "2026-02-19T07:55:49.754978+00:00", "c_class": "C2.9", "c_class_time": "2026-02-20T02:52:00Z", "result": "false_alert", "verified_utc": "2026-02-20T10:01:08Z"}
+{"alert_time": "2026-02-19T19:53:22.630496+00:00", "c_class": "C2.9", "c_class_time": "2026-02-20T02:52:00Z", "result": "false_alert", "verified_utc": "2026-02-20T20:57:38Z"}
 {"alert_time": "2026-02-20T05:07:45.982518+00:00", "result": "false_alert", "verified_utc": "2026-02-21T07:06:59Z"}
 {"alert_time": "2026-02-20T14:24:58.558991+00:00", "result": "false_alert", "verified_utc": "2026-02-21T14:55:58Z"}
 {"alert_time": "2026-02-21T04:53:09.138520+00:00", "c_class": "C1.2", "c_class_time": "2026-02-22T00:26:00Z", "result": "false_alert", "verified_utc": "2026-02-22T05:02:33Z"}
@@ -28,6 +28,6 @@
 {"alert_time": "2026-02-25T05:27:48.695271+00:00", "flare_class": "M2.3", "flare_time": "2026-02-25T15:35:00Z", "lead_minutes": 607.2, "result": "hit", "verified_utc": "2026-02-26T05:36:19Z"}
 {"alert_time": "2026-02-25T15:59:39.168955+00:00", "result": "false_alert", "verified_utc": "2026-02-26T16:08:20Z"}
 {"alert_time": "2026-02-26T09:21:54.403199+00:00", "c_class": "C6.3", "c_class_time": "2026-02-26T18:56:00Z", "result": "false_alert", "verified_utc": "2026-02-27T09:29:17Z"}
-{"alert_time": "2026-02-26T19:24:12.387757+00:00", "c_class": "C3.5", "c_class_time": "2026-02-27T12:47:00Z", "result": "false_alert", "verified_utc": "2026-02-27T19:28:10Z"}
-{"alert_time": "2026-02-27T09:29:16.463331+00:00", "c_class": "C6.4", "c_class_time": "2026-02-28T02:56:00Z", "result": "false_alert", "verified_utc": "2026-02-28T09:42:50Z"}
-{"alert_time": "2026-02-27T19:53:54.780764+00:00", "c_class": "C6.4", "c_class_time": "2026-02-28T02:56:00Z", "result": "false_alert", "verified_utc": "2026-02-28T20:07:57Z"}
+{"alert_time": "2026-02-26T19:24:12.387757+00:00", "c_class": "C3.5", "c_class_time": "2026-02-27T12:46:00Z", "result": "false_alert", "verified_utc": "2026-02-27T19:28:10Z"}
+{"alert_time": "2026-02-27T09:29:16.463331+00:00", "c_class": "C3.5", "c_class_time": "2026-02-27T12:46:00Z", "result": "false_alert", "verified_utc": "2026-02-28T09:42:50Z"}
+{"alert_time": "2026-02-27T19:53:54.780764+00:00", "c_class": "C3.4", "c_class_time": "2026-02-27T19:59:00Z", "result": "false_alert", "verified_utc": "2026-02-28T20:07:57Z"}
