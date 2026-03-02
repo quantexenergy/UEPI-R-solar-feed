@@ -9,16 +9,17 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 |--------|-------|
 | Verified hits | **8** |
 | M-class coverage | **72.7%** (8/11 flares) |
-| M-class hit rate | **21.1%** (8/38) |
-| False alerts | 30/38 |
-| C-class associated | 23/30 false alerts |
+| M-class hit rate | **20.5%** (8/39) |
+| False alerts | 31/39 |
+| C-class associated | 24/31 false alerts |
 | Median lead time | **8h 20m** |
-| Pending verification | 4 |
-| Last updated | 2026-03-02T17:12:57Z |
+| Pending verification | 3 |
+| Last updated | 2026-03-02T17:27:57Z |
 
 ## Event Log
 
 ```diff
+! C-ASSOCIATED Alert: 2026-03-01 17:16 UTC  |  No M1.0+ (C4.5 at 04:29)
 ! C-ASSOCIATED Alert: 2026-03-01 09:38 UTC  |  No M1.0+ (C4.5 at 04:29)
 ! C-ASSOCIATED Alert: 2026-03-01 02:22 UTC  |  No M1.0+ (C5.9 at 07:30)
 ! C-ASSOCIATED Alert: 2026-02-28 21:38 UTC  |  No M1.0+ (C6.1 at 01:55)
