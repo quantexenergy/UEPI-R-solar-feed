@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-03-02 02:10 UTC | Status: QUIET | P(M1.0+ within 24h): 38.6%
+2026-03-02 02:25 UTC | Status: QUIET | P(M1.0+ within 24h): 37.3%
 ```
 
 ---
@@ -37,11 +37,11 @@ All alerts are automatically verified against [NOAA's official flare list](https
 | Verified hits | **8** |
 | Total M1.0+ flares | 11 |
 | Coverage | **72.7%** |
-| Precision | 8/36 alerts (22.2%) |
-| False alerts | 28 |
-| C-class associated | 21/28 false alerts |
+| Precision | 8/37 alerts (21.6%) |
+| False alerts | 29 |
+| C-class associated | 22/29 false alerts |
 | Median lead time | **8h 20m** |
-| Pending | 4 |
+| Pending | 3 |
 
 ### Verification Rules
 
@@ -57,6 +57,7 @@ All alerts are timestamped via Git commits prior to flare occurrence.
 Full log: [`TRACK_RECORD.md`](TRACK_RECORD.md)
 
 ```diff
+! C-ASSOCIATED Alert: 2026-03-01 02:22 UTC  |  No M1.0+ (C5.9 at 07:30)
 ! C-ASSOCIATED Alert: 2026-02-28 21:38 UTC  |  No M1.0+ (C6.1 at 01:55)
 ! C-ASSOCIATED Alert: 2026-02-28 09:42 UTC  |  No M1.0+ (C6.1 at 01:55)
 ! C-ASSOCIATED Alert: 2026-02-28 03:32 UTC  |  No M1.0+ (C6.1 at 01:55)
