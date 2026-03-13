@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-03-13 08:45 UTC | Status: RED   | P(M1.0+ within 24h): 31.5%
+2026-03-13 09:00 UTC | Status: RED   | P(M1.0+ within 24h): 0.8%
 ```
 
 ---
@@ -37,11 +37,11 @@ All alerts are automatically verified against [NOAA's official flare list](https
 | Verified hits | **8** |
 | Total M1.0+ flares | 11 |
 | Coverage | **72.7%** |
-| Precision | 8/48 alerts (16.7%) |
-| False alerts | 40 |
-| C-class associated | 32/40 false alerts |
+| Precision | 8/49 alerts (16.3%) |
+| False alerts | 41 |
+| C-class associated | 33/41 false alerts |
 | Median lead time | **8h 20m** |
-| Pending | 2 |
+| Pending | 1 |
 
 ### Verification Rules
 
@@ -57,6 +57,7 @@ All alerts are timestamped via Git commits prior to flare occurrence.
 Full log: [`TRACK_RECORD.md`](TRACK_RECORD.md)
 
 ```diff
+! C-ASSOCIATED Alert: 2026-03-12 08:45 UTC  |  No M1.0+ (C4.3 at 00:57)
 ! C-ASSOCIATED Alert: 2026-03-10 19:00 UTC  |  No M1.0+ (C1.1 at 00:56)
 ! C-ASSOCIATED Alert: 2026-03-09 20:45 UTC  |  No M1.0+ (C4.6 at 18:32)
 - FALSE Alert: 2026-03-04 05:34 UTC  |  No M1.0+ flare within 24h
