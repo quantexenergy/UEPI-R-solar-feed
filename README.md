@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-03-14 16:15 UTC | Status: QUIET | P(M1.0+ within 24h): 24.5%
+2026-03-14 16:16 UTC | Status: QUIET | P(M1.0+ within 24h): 25.3%
 ```
 
 ---
@@ -21,7 +21,7 @@ Validated on 16 years (2010-2025) of NOAA GOES XRS data.
 | M/X coverage | 64-71% (matching dependent) |
 | Precision | 39.6% |
 | False alert rate | 0.36/day |
-| Day-level TSS | 0.41 |
+| Day-level TSS | 0.69 |
 | Median lead time | 2.4-4.3 hours |
 
 UEPI-R is a continuous onset-warning system, not a 24-hour binary classifier.
@@ -34,13 +34,12 @@ All alerts are automatically verified against [NOAA's official flare list](https
 
 | Metric | Value |
 |--------|-------|
-| Verified hits | **8** |
-| Total M1.0+ flares | 11 |
-| Coverage | **72.7%** |
-| Precision | 8/51 alerts (15.7%) |
-| False alerts | 43 |
-| C-class associated | 35/43 false alerts |
+| M-class coverage | **72.7%** (8/11 flares detected) |
 | Median lead time | **8h 20m** |
+| Total alerts | 51 |
+| Verified hits | 8 |
+| False alerts | 43 |
+| C-class associated | 35/43 false alerts (81% detecting real activity) |
 | Pending | 1 |
 
 ### Verification Rules
