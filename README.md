@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-03-21 15:01 UTC | Status: QUIET | P(M1.0+ within 24h): 7.5%
+2026-03-21 15:10 UTC | Status: QUIET | P(M1.0+ within 24h): 7.5%
 ```
 
 ---
@@ -40,6 +40,12 @@ All alerts are automatically verified against [NOAA's official flare list](https
 | Verified hits | 8 |
 | False alerts | 48 |
 | C-class associated | 40/48 false alerts (83% detecting real activity) |
+
+> **Note (March 21, 2026):** Alerts before this date used a 26-hour data buffer that
+> clipped the baseline window from 24h to 12h, causing elevated false alerts.
+> The buffer has been increased to 50 hours to match the backtest configuration.
+> Expect improved precision going forward; historical results above reflect the
+> pre-fix period.
 
 ### Verification Rules
 
