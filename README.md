@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-03-26 21:51 UTC | Status: QUIET | P(M1.0+ within 24h): 64.6%
+2026-03-26 22:00 UTC | Status: QUIET | P(M1.0+ within 24h): 60.6%
 ```
 
 ---
