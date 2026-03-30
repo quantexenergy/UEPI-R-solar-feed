@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-03-30T03:45:36Z",
+  "updated_utc": "2026-03-30T04:00:37Z",
   "total_alerts": 63,
   "verified_hits": 8,
   "verified_false": 54,
@@ -11,6 +11,6 @@
   "c_class_associated": 46,
   "avg_lead_minutes": 523.5,
   "median_lead_minutes": 500.6,
-  "m_class_total_flares": 13,
-  "m_class_coverage": 0.615
+  "m_class_total_flares": 14,
+  "m_class_coverage": 0.571
 }
