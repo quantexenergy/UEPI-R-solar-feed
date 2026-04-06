@@ -3,7 +3,7 @@
 Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
 
 ```
-2026-04-06 15:15 UTC | Status: QUIET | P(M1.0+ within 24h): 15.9%
+2026-04-06 15:16 UTC | Status: QUIET | P(M1.0+ within 24h): 15.9%
 ```
 
 ---
@@ -32,20 +32,16 @@ UEPI-R is a continuous onset-warning system, not a 24-hour binary classifier.
 
 All alerts are automatically verified against [NOAA's official flare list](https://services.swpc.noaa.gov/json/goes/primary/xray-flares-7-day.json) after a 24-hour hazard window.
 
-| Metric | Value |
-|--------|-------|
-| M-class coverage | **71.4%** (15/21 flares detected) |
-| Median lead time | **11h 30m** |
-| Total alerts | 71 |
-| Verified hits | 15 |
-| False alerts | 56 |
-| C-class associated | 48/56 false alerts (86% detecting real activity) |
+A baseline-window bug inflated false alerts before March 21, 2026 (see note below).
+The **Since Fix** column reflects corrected performance.
 
-> **Note (March 21, 2026):** Alerts before this date used a 26-hour data buffer that
-> clipped the baseline window from 24h to 12h, causing elevated false alerts.
-> The buffer has been increased to 50 hours to match the backtest configuration.
-> Expect improved precision going forward; historical results above reflect the
-> pre-fix period.
+| Metric | Lifetime | Since Fix (Mar 21) |
+|--------|:--------:|:------------------:|
+| M-class coverage | 71.4% (15/21) | **77.8%** (7/9) |
+| Precision | 21.1% | **46.7%** |
+| False alerts/day | 1.01 | **0.62** |
+| Median lead time | 11.5h | **12.1h** |
+| Alerts | 71 | 15 |
 
 ### Verification Rules
 
