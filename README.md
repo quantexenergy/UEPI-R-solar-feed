@@ -1,9 +1,9 @@
-# UEPI-R Solar Flare Early Warning
+# UEPI-R Solar Flare Risk Monitor
 
-Real-Time M/X-Class Flare Onset Detection (GOES XRS Only)
+Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-04-07 03:15 UTC | Status: QUIET | P(M1.0+ within 24h): 15.9%
+2026-04-07 03:24 UTC | Status: QUIET | P(M1.0+ within 24h): 15.9%
 ```
 
 ---
@@ -17,14 +17,14 @@ Validated on 16 years (2010-2025) of NOAA GOES XRS data.
 
 | Metric | Value |
 |--------|-------|
-| X-class coverage | **97.2%** (137/141) |
-| M/X coverage | 64-71% (matching dependent) |
+| X-class detection | **97.2%** (137/141) |
+| M/X detection | 64-71% (matching dependent) |
 | Precision | 39.6% |
 | False alert rate | 0.36/day |
 | Day-level TSS | 0.69 |
-| Median lead time | 2.4-4.3 hours |
+| Brier skill score | 0.38 (calibrated probability) |
 
-UEPI-R is a continuous onset-warning system, not a 24-hour binary classifier.
+UEPI-R identifies elevated flare-risk periods using causal regime detection on GOES XRS flux. During active periods, the system maintains elevated risk state and calibrated probability output. It is not a point-in-time onset predictor.
 
 ---
 
@@ -140,13 +140,13 @@ Full log: [`TRACK_RECORD.md`](TRACK_RECORD.md)
 
 ## What UEPI-R Does
 
-UEPI-R performs causal regime detection on full-disk GOES XRS irradiance data.
+UEPI-R monitors GOES XRS irradiance to identify periods of elevated solar flare risk.
 
-- XRS-only input (no magnetograms)
+- Detects elevated-risk regimes from XRS flux alone (no magnetograms)
 - Fully causal (no future data)
-- Continuous minute-resolution alerting
-- Multi-tier alert states
-- Logistic-calibrated probability output (Brier score: 0.098)
+- Calibrated P(M1.0+ within 24h) updated every 15 minutes
+- Binary risk flag (`red_alert`) for automated downstream triggers
+- 97% of X-class flares in 2010-2025 occurred during flagged risk periods
 
 Runs automatically every 15 minutes via GitHub Actions.
 
@@ -166,7 +166,7 @@ The climatological base rate is ~20%: roughly one in five 15-minute samples fall
 - `red_alert: true` typically corresponds to probabilities above 20-30%.
 - Probabilities are calibrated: a 40% reading means ~40% of similar moments in 2010-2025 were followed by an M1.0+ flare within 24 hours.
 
-**`red_alert` vs `flare_probability`:** The probability reflects overall environmental risk (dominated by background flux level). The `red_alert` flag detects specific onset signatures (rapid flux rise + spectral hardening). A high probability with `red_alert: false` means elevated background risk without an active onset; a lower probability with `red_alert: true` means an onset was detected despite modest background levels.
+**`red_alert` vs `flare_probability`:** The probability reflects overall environmental risk (dominated by background flux level). The `red_alert` flag triggers when the system detects an elevated-risk regime (rising flux + spectral hardening + sustained activity). During active periods, `red_alert` may remain true for hours to days. The probability provides finer granularity within that risk window.
 
 ---
 
