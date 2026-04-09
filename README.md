@@ -3,7 +3,7 @@
 Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-04-09 03:45 UTC | Status: QUIET | P(M1.0+ within 24h): 16.2%
+2026-04-09 04:00 UTC | Status: QUIET | P(M1.0+ within 24h): 15.9%
 ```
 
 ---
