@@ -3,7 +3,7 @@
 Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-04-24 14:00 UTC | Status: RED   | P(M1.0+ within 24h): 64.6%
+2026-04-24 14:15 UTC | Status: RED   | P(M1.0+ within 24h): 57.4%
 ```
 
 ---
@@ -37,12 +37,12 @@ The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 56.7% (17/30) | **50.0%** (9/18) |
-| Precision | 21.5% | **39.1%** |
-| False alerts/day | 0.84 | **0.45** |
-| Median lead time | 10.9h | **11.5h** |
-| Alerts | 79 | 23 |
-| Pending | 3 | |
+| M-class coverage | 60.0% (18/30) | **55.6%** (10/18) |
+| Precision | 22.5% | **41.7%** |
+| False alerts/day | 0.83 | **0.44** |
+| Median lead time | 10.5h | **11.2h** |
+| Alerts | 80 | 24 |
+| Pending | 2 | |
 
 ### Verification Rules
 
@@ -62,7 +62,7 @@ Full log: [`TRACK_RECORD.md`](TRACK_RECORD.md)
 ! MISS Flare: M1.9 at 2026-04-24 08:57 UTC  |  No alert issued
 ! MISS Flare: X2.5 at 2026-04-24 08:01 UTC  |  No alert issued
 ! MISS Flare: X2.4 at 2026-04-24 00:51 UTC  |  No alert issued
-! MISS Flare: M4.9 at 2026-04-23 17:00 UTC  |  No alert issued
++ HIT  Alert: 2026-04-23 14:00 UTC  |  Flare: M4.9 at 2026-04-23 17:00 UTC  |  Lead: 2h 59m
 ! MISS Flare: M1.7 at 2026-04-23 13:42 UTC  |  No alert issued
 ! MISS Flare: M4.3 at 2026-04-23 08:40 UTC  |  No alert issued
 + HIT  Alert: 2026-04-22 23:30 UTC  |  Flare: M1.2 at 2026-04-23 04:50 UTC  |  Lead: 5h 19m
