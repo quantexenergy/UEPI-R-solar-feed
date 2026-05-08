@@ -9,13 +9,12 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 |--------|-------|
 | Verified hits | **31** |
 | M-class coverage | **65.2%** (30/46 flares) |
-| M-class hit rate | **29.1%** (30/103) |
-| X-class hit rate | **1.0%** (1/103) |
-| False alerts | 72/103 |
-| C-class associated | 62/72 false alerts |
+| M-class hit rate | **28.8%** (30/104) |
+| X-class hit rate | **1.0%** (1/104) |
+| False alerts | 73/104 |
+| C-class associated | 63/73 false alerts |
 | Median lead time | **10h 53m** |
-| Pending verification | 1 |
-| Last updated | 2026-05-08T14:30:42Z |
+| Last updated | 2026-05-08T14:45:33Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
@@ -24,14 +23,15 @@ The **Since Fix** column reflects corrected performance.
 |--------|:--------:|:------------------:|
 | M-class coverage | 65.2% (30/46) | **64.7%** (22/34) |
 | X-class hits | 1 | **1** |
-| Precision | 30.1% | **48.9%** |
-| False alerts | 72 | **24** |
+| Precision | 29.8% | **47.9%** |
+| False alerts | 73 | **25** |
 | Median lead time | 10h 53m | **11h 20m** |
-| Alerts | 103 | 47 |
+| Alerts | 104 | 48 |
 
 ## Event Log
 
 ```diff
+! C-ASSOCIATED Alert: 2026-05-07 14:45 UTC  |  No M1.0+ (C6.0 at 17:44)
 + HIT  Alert: 2026-05-07 02:00 UTC  |  Flare: M2.6 at 2026-05-07 14:20 UTC  |  Lead: 12h 19m
 ! C-ASSOCIATED Alert: 2026-05-05 05:45 UTC  |  No M1.0+ (C1.9 at 08:30)
 ! C-ASSOCIATED Alert: 2026-05-04 01:45 UTC  |  No M1.0+ (C1.5 at 11:33)
