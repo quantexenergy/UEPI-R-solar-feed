@@ -14,8 +14,8 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | False alerts | 75/107 |
 | C-class associated | 65/75 false alerts |
 | Median lead time | **10h 45m** |
-| Pending verification | 2 |
-| Last updated | 2026-05-14T17:26:34Z |
+| Pending verification | 3 |
+| Last updated | 2026-05-14T17:31:15Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
