@@ -1,1 +1,1 @@
-{"data_stale": false, "detector_version": "2.3", "flare_probability": 0.2697, "generated_utc": "2026-05-14T20:01:11.534341+00:00", "latest_sample_utc": "2026-05-14 19:58:00+00:00", "min_class": "M1.0", "red_alert": true, "source": "noaa", "status_summary": "RED alert active | P(M1+)=27%"}
+{"data_stale": false, "detector_version": "2.3", "flare_probability": 0.2452, "generated_utc": "2026-05-14T20:15:30.530054+00:00", "latest_sample_utc": "2026-05-14 20:12:00+00:00", "min_class": "M1.0", "red_alert": true, "source": "noaa", "status_summary": "RED alert active | P(M1+)=25%"}
