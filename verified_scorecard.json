@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-06-03T22:53:24Z",
-  "total_alerts": 128,
+  "updated_utc": "2026-06-04T00:28:51Z",
+  "total_alerts": 129,
   "verified_hits": 37,
   "verified_false": 91,
-  "pending": 0,
+  "pending": 1,
   "m_class_hits": 36,
   "m_class_hit_rate": 0.281,
   "x_class_hits": 1,
