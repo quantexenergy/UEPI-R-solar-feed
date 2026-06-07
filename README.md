@@ -3,7 +3,7 @@
 Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-06-07 13:45 UTC | Status: QUIET | P(M1.0+ within 24h): 31.5%
+2026-06-07 15:22 UTC | Status: QUIET | P(M1.0+ within 24h): 31.5%
 ```
 
 ---
@@ -39,11 +39,10 @@ The **Since Fix** column reflects corrected performance.
 |--------|:--------:|:------------------:|
 | M-class coverage | 62.7% (37/59) | **61.7%** (29/47) |
 | X-class hits | 1 | **1** |
-| Precision | 29.2% | **40.5%** |
-| False alerts/day | 0.78 | **0.59** |
+| Precision | 29.0% | **40.0%** |
+| False alerts/day | 0.79 | **0.60** |
 | Median lead time | 10.4h | **10.8h** |
-| Alerts | 130 | 74 |
-| Pending | 1 | |
+| Alerts | 131 | 75 |
 
 ### Verification Rules
 
@@ -59,6 +58,7 @@ All alerts are timestamped via Git commits prior to flare occurrence.
 Full log: [`TRACK_RECORD.md`](TRACK_RECORD.md)
 
 ```diff
+! C-ASSOCIATED Alert: 2026-06-06 14:27 UTC  |  No M1.0+ (C3.3 at 04:10)
 + HIT  Alert: 2026-06-05 16:18 UTC  |  Flare: M1.8 at 2026-06-06 13:40 UTC  |  Lead: 21h 22m
 ! C-ASSOCIATED Alert: 2026-06-04 00:28 UTC  |  No M1.0+ (C2.6 at 03:41)
 ! MISS Flare: M7.7 at 2026-06-03 06:49 UTC  |  No alert issued
