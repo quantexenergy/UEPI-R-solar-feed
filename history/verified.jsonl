@@ -135,3 +135,4 @@
 {"alert_time": "2026-06-19T20:19:35.435094+00:00", "flare_class": "M1.3", "flare_time": "2026-06-20T01:26:00Z", "lead_minutes": 306.4, "result": "hit", "verified_utc": "2026-06-20T20:44:11Z"}
 {"alert_time": "2026-06-20T02:45:59.242867+00:00", "flare_class": "M1.0", "flare_time": "2026-06-20T14:50:00Z", "lead_minutes": 724.0, "result": "hit", "verified_utc": "2026-06-21T03:11:32Z"}
 {"alert_time": "2026-06-20T15:34:48.517789+00:00", "flare_class": "M2.6", "flare_time": "2026-06-21T02:25:00Z", "lead_minutes": 650.2, "result": "hit", "verified_utc": "2026-06-21T16:09:46Z"}
+{"alert_time": "2026-06-20T21:46:20.637591+00:00", "flare_class": "M6.8", "flare_time": "2026-06-21T19:17:00Z", "lead_minutes": 1290.7, "result": "hit", "verified_utc": "2026-06-21T22:09:38Z"}
