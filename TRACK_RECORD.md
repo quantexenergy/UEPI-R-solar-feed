@@ -7,31 +7,32 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 
 | Metric | Value |
 |--------|-------|
-| Verified hits | **42** |
-| M-class coverage | **65.1%** (41/63 flares) |
-| M-class hit rate | **27.9%** (41/147) |
-| X-class hit rate | **0.7%** (1/147) |
-| False alerts | 105/147 |
+| Verified hits | **43** |
+| M-class coverage | **65.6%** (42/64 flares) |
+| M-class hit rate | **28.4%** (42/148) |
+| X-class hit rate | **0.7%** (1/148) |
+| False alerts | 105/148 |
 | C-class associated | 95/105 false alerts |
-| Median lead time | **10h 43m** |
-| Pending verification | 3 |
-| Last updated | 2026-06-29T21:47:10Z |
+| Median lead time | **10h 50m** |
+| Pending verification | 2 |
+| Last updated | 2026-06-29T22:24:53Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 65.1% (41/63) | **64.7%** (33/51) |
+| M-class coverage | 65.6% (42/64) | **65.4%** (34/52) |
 | X-class hits | 1 | **1** |
-| Precision | 28.6% | **37.4%** |
+| Precision | 29.1% | **38.0%** |
 | False alerts | 105 | **57** |
-| Median lead time | 10h 43m | **10h 51m** |
-| Alerts | 147 | 91 |
+| Median lead time | 10h 50m | **10h 53m** |
+| Alerts | 148 | 92 |
 
 ## Event Log
 
 ```diff
++ HIT  Alert: 2026-06-28 21:49 UTC  |  Flare: M1.4 at 2026-06-29 21:13 UTC  |  Lead: 23h 23m
 ! C-ASSOCIATED Alert: 2026-06-27 09:33 UTC  |  No M1.0+ (C7.4 at 20:53)
 ! C-ASSOCIATED Alert: 2026-06-26 13:17 UTC  |  No M1.0+ (C3.9 at 09:08)
 ! C-ASSOCIATED Alert: 2026-06-25 23:59 UTC  |  No M1.0+ (C5.7 at 12:23)
