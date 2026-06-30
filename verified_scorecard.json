@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-06-30T13:14:34Z",
+  "updated_utc": "2026-06-30T14:01:08Z",
   "total_alerts": 151,
   "verified_hits": 44,
   "verified_false": 105,
@@ -11,8 +11,8 @@
   "c_class_associated": 95,
   "avg_lead_minutes": 614.9,
   "median_lead_minutes": 651.8,
-  "m_class_total_flares": 65,
-  "m_class_coverage": 0.662,
+  "m_class_total_flares": 66,
+  "m_class_coverage": 0.652,
   "since_fix": {
     "date": "2026-03-21",
     "total_alerts": 93,
@@ -24,7 +24,7 @@
     "c_class_associated": 55,
     "avg_lead_minutes": 635.2,
     "median_lead_minutes": 666.9,
-    "m_class_total_flares": 53,
-    "m_class_coverage": 0.66
+    "m_class_total_flares": 54,
+    "m_class_coverage": 0.648
   }
 }
