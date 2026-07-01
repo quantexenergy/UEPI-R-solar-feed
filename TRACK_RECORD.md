@@ -7,31 +7,32 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 
 | Metric | Value |
 |--------|-------|
-| Verified hits | **46** |
-| M-class coverage | **58.7%** (44/75 flares) |
-| M-class hit rate | **29.1%** (44/151) |
-| X-class hit rate | **1.3%** (2/151) |
-| False alerts | 105/151 |
+| Verified hits | **47** |
+| M-class coverage | **59.2%** (45/76 flares) |
+| M-class hit rate | **29.6%** (45/152) |
+| X-class hit rate | **1.3%** (2/152) |
+| False alerts | 105/152 |
 | C-class associated | 95/105 false alerts |
-| Median lead time | **10h 51m** |
-| Pending verification | 3 |
-| Last updated | 2026-07-01T20:24:13Z |
+| Median lead time | **10h 50m** |
+| Pending verification | 2 |
+| Last updated | 2026-07-01T21:02:21Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 58.7% (44/75) | **57.1%** (36/63) |
+| M-class coverage | 59.2% (45/76) | **57.8%** (37/64) |
 | X-class hits | 2 | **2** |
-| Precision | 30.5% | **40.0%** |
+| Precision | 30.9% | **40.6%** |
 | False alerts | 105 | **57** |
-| Median lead time | 10h 51m | **11h 06m** |
-| Alerts | 151 | 95 |
+| Median lead time | 10h 50m | **10h 53m** |
+| Alerts | 152 | 96 |
 
 ## Event Log
 
 ```diff
+! MISS Flare: M1.8 at 2026-07-01 20:15 UTC  |  No alert issued
 ! MISS Flare: M3.5 at 2026-07-01 18:44 UTC  |  No alert issued
 ! MISS Flare: M2.6 at 2026-07-01 14:39 UTC  |  No alert issued
 ! MISS Flare: M1.1 at 2026-07-01 14:22 UTC  |  No alert issued
@@ -39,7 +40,7 @@ The **Since Fix** column reflects corrected performance.
 ! MISS Flare: M2.5 at 2026-07-01 08:07 UTC  |  No alert issued
 ! MISS Flare: M1.5 at 2026-07-01 07:28 UTC  |  No alert issued
 ! MISS Flare: M1.0 at 2026-07-01 06:37 UTC  |  No alert issued
-! MISS Flare: M1.1 at 2026-07-01 06:19 UTC  |  No alert issued
++ HIT  Alert: 2026-06-30 20:39 UTC  |  Flare: M1.1 at 2026-07-01 06:19 UTC  |  Lead: 9h 39m
 + HIT  Alert: 2026-06-30 13:14 UTC  |  Flare: X1.1 at 2026-06-30 20:34 UTC  |  Lead: 7h 19m
 + HIT  Alert: 2026-06-29 18:15 UTC  |  Flare: M5.8 at 2026-06-30 12:37 UTC  |  Lead: 18h 21m
 + HIT  Alert: 2026-06-29 08:28 UTC  |  Flare: M1.3 at 2026-06-30 00:39 UTC  |  Lead: 16h 10m
