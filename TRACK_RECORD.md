@@ -8,21 +8,21 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | Metric | Value |
 |--------|-------|
 | Verified hits | **52** |
-| M-class coverage | **58.8%** (50/85 flares) |
+| M-class coverage | **57.5%** (50/87 flares) |
 | M-class hit rate | **31.8%** (50/157) |
 | X-class hit rate | **1.3%** (2/157) |
 | False alerts | 105/157 |
 | C-class associated | 95/105 false alerts |
 | Median lead time | **10h 43m** |
 | Pending verification | 2 |
-| Last updated | 2026-07-04T00:08:09Z |
+| Last updated | 2026-07-04T00:59:08Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 58.8% (50/85) | **57.5%** (42/73) |
+| M-class coverage | 57.5% (50/87) | **56.0%** (42/75) |
 | X-class hits | 2 | **2** |
 | Precision | 33.1% | **43.6%** |
 | False alerts | 105 | **57** |
@@ -32,6 +32,8 @@ The **Since Fix** column reflects corrected performance.
 ## Event Log
 
 ```diff
+! MISS Flare: M2.3 at 2026-07-04 00:13 UTC  |  No alert issued
+! MISS Flare: M2.0 at 2026-07-03 23:50 UTC  |  No alert issued
 ! MISS Flare: M1.5 at 2026-07-03 19:59 UTC  |  No alert issued
 ! MISS Flare: M6.3 at 2026-07-03 18:57 UTC  |  No alert issued
 ! MISS Flare: M6.7 at 2026-07-03 17:49 UTC  |  No alert issued
