@@ -7,27 +7,27 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 
 | Metric | Value |
 |--------|-------|
-| Verified hits | **51** |
-| M-class coverage | **57.6%** (49/85 flares) |
-| M-class hit rate | **31.4%** (49/156) |
-| X-class hit rate | **1.3%** (2/156) |
-| False alerts | 105/156 |
+| Verified hits | **52** |
+| M-class coverage | **58.8%** (50/85 flares) |
+| M-class hit rate | **31.8%** (50/157) |
+| X-class hit rate | **1.3%** (2/157) |
+| False alerts | 105/157 |
 | C-class associated | 95/105 false alerts |
-| Median lead time | **10h 37m** |
-| Pending verification | 3 |
-| Last updated | 2026-07-03T23:37:01Z |
+| Median lead time | **10h 43m** |
+| Pending verification | 2 |
+| Last updated | 2026-07-04T00:08:09Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 57.6% (49/85) | **56.2%** (41/73) |
+| M-class coverage | 58.8% (50/85) | **57.5%** (42/73) |
 | X-class hits | 2 | **2** |
-| Precision | 32.7% | **43.0%** |
+| Precision | 33.1% | **43.6%** |
 | False alerts | 105 | **57** |
-| Median lead time | 10h 37m | **10h 50m** |
-| Alerts | 156 | 100 |
+| Median lead time | 10h 43m | **10h 51m** |
+| Alerts | 157 | 101 |
 
 ## Event Log
 
@@ -35,7 +35,7 @@ The **Since Fix** column reflects corrected performance.
 ! MISS Flare: M1.5 at 2026-07-03 19:59 UTC  |  No alert issued
 ! MISS Flare: M6.3 at 2026-07-03 18:57 UTC  |  No alert issued
 ! MISS Flare: M6.7 at 2026-07-03 17:49 UTC  |  No alert issued
-! MISS Flare: M1.4 at 2026-07-03 13:03 UTC  |  No alert issued
++ HIT  Alert: 2026-07-02 23:38 UTC  |  Flare: M1.4 at 2026-07-03 13:03 UTC  |  Lead: 13h 24m
 + HIT  Alert: 2026-07-02 11:12 UTC  |  Flare: M1.2 at 2026-07-02 23:03 UTC  |  Lead: 11h 50m
 ! MISS Flare: M2.8 at 2026-07-02 10:21 UTC  |  No alert issued
 ! MISS Flare: M4.2 at 2026-07-02 01:37 UTC  |  No alert issued
