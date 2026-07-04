@@ -7,27 +7,27 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 
 | Metric | Value |
 |--------|-------|
-| Verified hits | **52** |
-| M-class coverage | **53.2%** (50/94 flares) |
-| M-class hit rate | **31.8%** (50/157) |
-| X-class hit rate | **1.3%** (2/157) |
-| False alerts | 105/157 |
+| Verified hits | **53** |
+| M-class coverage | **54.3%** (51/94 flares) |
+| M-class hit rate | **32.3%** (51/158) |
+| X-class hit rate | **1.3%** (2/158) |
+| False alerts | 105/158 |
 | C-class associated | 95/105 false alerts |
-| Median lead time | **10h 43m** |
-| Pending verification | 3 |
-| Last updated | 2026-07-04T12:51:07Z |
+| Median lead time | **10h 37m** |
+| Pending verification | 2 |
+| Last updated | 2026-07-04T13:31:46Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 53.2% (50/94) | **51.2%** (42/82) |
+| M-class coverage | 54.3% (51/94) | **52.4%** (43/82) |
 | X-class hits | 2 | **2** |
-| Precision | 33.1% | **43.6%** |
+| Precision | 33.5% | **44.1%** |
 | False alerts | 105 | **57** |
-| Median lead time | 10h 43m | **10h 51m** |
-| Alerts | 157 | 101 |
+| Median lead time | 10h 37m | **10h 50m** |
+| Alerts | 158 | 102 |
 
 ## Event Log
 
@@ -43,7 +43,7 @@ The **Since Fix** column reflects corrected performance.
 ! MISS Flare: M2.0 at 2026-07-03 23:50 UTC  |  No alert issued
 ! MISS Flare: M1.5 at 2026-07-03 19:59 UTC  |  No alert issued
 ! MISS Flare: M6.3 at 2026-07-03 18:57 UTC  |  No alert issued
-! MISS Flare: M6.7 at 2026-07-03 17:49 UTC  |  No alert issued
++ HIT  Alert: 2026-07-03 13:21 UTC  |  Flare: M6.7 at 2026-07-03 17:49 UTC  |  Lead: 4h 27m
 + HIT  Alert: 2026-07-02 23:38 UTC  |  Flare: M1.4 at 2026-07-03 13:03 UTC  |  Lead: 13h 24m
 + HIT  Alert: 2026-07-02 11:12 UTC  |  Flare: M1.2 at 2026-07-02 23:03 UTC  |  Lead: 11h 50m
 ! MISS Flare: M2.8 at 2026-07-02 10:21 UTC  |  No alert issued
