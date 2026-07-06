@@ -7,27 +7,27 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 
 | Metric | Value |
 |--------|-------|
-| Verified hits | **58** |
-| M-class coverage | **50.0%** (55/110 flares) |
-| M-class hit rate | **33.7%** (55/163) |
-| X-class hit rate | **1.8%** (3/163) |
-| False alerts | 105/163 |
+| Verified hits | **59** |
+| M-class coverage | **50.9%** (56/110 flares) |
+| M-class hit rate | **34.1%** (56/164) |
+| X-class hit rate | **1.8%** (3/164) |
+| False alerts | 105/164 |
 | C-class associated | 95/105 false alerts |
-| Median lead time | **9h** |
-| Pending verification | 2 |
-| Last updated | 2026-07-06T16:35:38Z |
+| Median lead time | **8h 21m** |
+| Pending verification | 1 |
+| Last updated | 2026-07-06T17:39:41Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 50.0% (55/110) | **48.0%** (47/98) |
+| M-class coverage | 50.9% (56/110) | **49.0%** (48/98) |
 | X-class hits | 3 | **3** |
-| Precision | 35.6% | **46.7%** |
+| Precision | 36.0% | **47.2%** |
 | False alerts | 105 | **57** |
-| Median lead time | 9h | **9h** |
-| Alerts | 163 | 107 |
+| Median lead time | 8h 21m | **8h 21m** |
+| Alerts | 164 | 108 |
 
 ## Event Log
 
@@ -35,7 +35,7 @@ The **Since Fix** column reflects corrected performance.
 ! MISS Flare: M1.0 at 2026-07-05 21:14 UTC  |  No alert issued
 ! MISS Flare: M1.4 at 2026-07-05 18:56 UTC  |  No alert issued
 ! MISS Flare: M5.3 at 2026-07-05 17:51 UTC  |  No alert issued
-! MISS Flare: M1.4 at 2026-07-05 16:41 UTC  |  No alert issued
++ HIT  Alert: 2026-07-05 16:36 UTC  |  Flare: M1.4 at 2026-07-05 16:41 UTC  |  Lead: 4min
 + HIT  Alert: 2026-07-05 11:31 UTC  |  Flare: M1.4 at 2026-07-05 16:21 UTC  |  Lead: 4h 49m
 ! MISS Flare: M1.4 at 2026-07-05 10:56 UTC  |  No alert issued
 + HIT  Alert: 2026-07-05 05:20 UTC  |  Flare: M2.7 at 2026-07-05 05:21 UTC  |  Lead: 0min
