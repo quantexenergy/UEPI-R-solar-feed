@@ -8,21 +8,21 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | Metric | Value |
 |--------|-------|
 | Verified hits | **59** |
-| M-class coverage | **50.5%** (56/111 flares) |
-| M-class hit rate | **33.9%** (56/165) |
-| X-class hit rate | **1.8%** (3/165) |
+| M-class coverage | **57.5%** (61/106 flares with alert active at onset) |
+| X-class coverage | **40.0%** (2/5 flares with alert active at onset) |
 | False alerts | 106/165 |
 | C-class associated | 96/106 false alerts |
 | Median lead time | **8h 21m** |
 | Pending verification | 1 |
-| Last updated | 2026-07-07T20:24:13Z |
+| Last updated | 2026-07-07T20:37:17Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 50.5% (56/111) | **48.5%** (48/99) |
+| M-class coverage | 57.5% (61/106) | **61.7%** (58/94) |
+| X-class coverage | 40% (2/5) | **40%** (2/5) |
 | X-class hits | 3 | **3** |
 | Precision | 35.8% | **46.8%** |
 | False alerts | 106 | **58** |
@@ -32,52 +32,39 @@ The **Since Fix** column reflects corrected performance.
 ## Event Log
 
 ```diff
-! MISS Flare: M4.0 at 2026-07-07 14:09 UTC  |  No alert issued
+! MISS Flare: M4.0 at 2026-07-07 14:09 UTC  |  No alert active at onset
 ! C-ASSOCIATED Alert: 2026-07-06 03:10 UTC  |  No M1.0+ (C6.1 at 04:55)
-! MISS Flare: M1.0 at 2026-07-05 21:14 UTC  |  No alert issued
-! MISS Flare: M1.4 at 2026-07-05 18:56 UTC  |  No alert issued
-! MISS Flare: M5.3 at 2026-07-05 17:51 UTC  |  No alert issued
 + HIT  Alert: 2026-07-05 16:36 UTC  |  Flare: M1.4 at 2026-07-05 16:41 UTC  |  Lead: 4min
+! MISS Flare: M1.4 at 2026-07-05 16:21 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-05 11:31 UTC  |  Flare: M1.4 at 2026-07-05 16:21 UTC  |  Lead: 4h 49m
-! MISS Flare: M1.4 at 2026-07-05 10:56 UTC  |  No alert issued
+! MISS Flare: M1.4 at 2026-07-05 10:56 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-05 05:20 UTC  |  Flare: M2.7 at 2026-07-05 05:21 UTC  |  Lead: 0min
-! MISS Flare: M1.0 at 2026-07-05 04:41 UTC  |  No alert issued
-! MISS Flare: M1.3 at 2026-07-05 04:19 UTC  |  No alert issued
-! MISS Flare: M1.3 at 2026-07-05 00:24 UTC  |  No alert issued
-! MISS Flare: M1.1 at 2026-07-04 22:16 UTC  |  No alert issued
+! MISS Flare: M1.0 at 2026-07-05 04:41 UTC  |  No alert active at onset
+! MISS Flare: M1.3 at 2026-07-05 04:19 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-04 19:29 UTC  |  Flare: X1.3 at 2026-07-04 20:29 UTC  |  Lead: 59min
-! MISS Flare: M1.5 at 2026-07-04 19:23 UTC  |  No alert issued
-! MISS Flare: M1.9 at 2026-07-04 18:36 UTC  |  No alert issued
-! MISS Flare: M1.1 at 2026-07-04 16:02 UTC  |  No alert issued
-! MISS Flare: M3.2 at 2026-07-04 13:41 UTC  |  No alert issued
-! MISS Flare: M3.2 at 2026-07-04 11:04 UTC  |  No alert issued
+! MISS Flare: M1.5 at 2026-07-04 19:23 UTC  |  No alert active at onset
+! MISS Flare: M1.9 at 2026-07-04 18:36 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-04 08:38 UTC  |  Flare: M1.0 at 2026-07-04 08:41 UTC  |  Lead: 2min
-! MISS Flare: M1.8 at 2026-07-04 07:48 UTC  |  No alert issued
-! MISS Flare: M1.3 at 2026-07-04 05:04 UTC  |  No alert issued
-! MISS Flare: M3.7 at 2026-07-04 03:21 UTC  |  No alert issued
-! MISS Flare: M1.2 at 2026-07-04 01:52 UTC  |  No alert issued
-! MISS Flare: M2.1 at 2026-07-04 00:59 UTC  |  No alert issued
-! MISS Flare: M2.3 at 2026-07-04 00:13 UTC  |  No alert issued
-! MISS Flare: M2.0 at 2026-07-03 23:50 UTC  |  No alert issued
-! MISS Flare: M1.5 at 2026-07-03 19:59 UTC  |  No alert issued
+! MISS Flare: M1.8 at 2026-07-04 07:48 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-03 18:29 UTC  |  Flare: M6.3 at 2026-07-03 18:57 UTC  |  Lead: 28min
+! MISS Flare: M6.7 at 2026-07-03 17:49 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-03 13:21 UTC  |  Flare: M6.7 at 2026-07-03 17:49 UTC  |  Lead: 4h 27m
+! MISS Flare: M1.4 at 2026-07-03 13:03 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-02 23:38 UTC  |  Flare: M1.4 at 2026-07-03 13:03 UTC  |  Lead: 13h 24m
+! MISS Flare: M1.2 at 2026-07-02 23:03 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-02 11:12 UTC  |  Flare: M1.2 at 2026-07-02 23:03 UTC  |  Lead: 11h 50m
-! MISS Flare: M2.8 at 2026-07-02 10:21 UTC  |  No alert issued
-! MISS Flare: M4.2 at 2026-07-02 01:37 UTC  |  No alert issued
+! MISS Flare: M2.8 at 2026-07-02 10:21 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-01 23:35 UTC  |  Flare: M1.1 at 2026-07-01 23:49 UTC  |  Lead: 14min
-! MISS Flare: M8.5 at 2026-07-01 22:57 UTC  |  No alert issued
-! MISS Flare: M1.8 at 2026-07-01 20:15 UTC  |  No alert issued
+! MISS Flare: M8.5 at 2026-07-01 22:57 UTC  |  No alert active at onset
+! MISS Flare: M1.8 at 2026-07-01 20:15 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-01 15:25 UTC  |  Flare: M3.5 at 2026-07-01 18:44 UTC  |  Lead: 3h 18m
-! MISS Flare: M2.6 at 2026-07-01 14:39 UTC  |  No alert issued
-! MISS Flare: M1.1 at 2026-07-01 14:22 UTC  |  No alert issued
-! MISS Flare: M1.3 at 2026-07-01 10:04 UTC  |  No alert issued
-! MISS Flare: M2.5 at 2026-07-01 08:07 UTC  |  No alert issued
-! MISS Flare: M1.5 at 2026-07-01 07:28 UTC  |  No alert issued
+! MISS Flare: M2.6 at 2026-07-01 14:39 UTC  |  No alert active at onset
+! MISS Flare: M1.1 at 2026-07-01 14:22 UTC  |  No alert active at onset
 + HIT  Alert: 2026-07-01 05:34 UTC  |  Flare: M1.0 at 2026-07-01 06:37 UTC  |  Lead: 1h 02m
 + HIT  Alert: 2026-06-30 20:39 UTC  |  Flare: M1.1 at 2026-07-01 06:19 UTC  |  Lead: 9h 39m
+! MISS Flare: X1.1 at 2026-06-30 20:34 UTC  |  No alert active at onset
 + HIT  Alert: 2026-06-30 13:14 UTC  |  Flare: X1.1 at 2026-06-30 20:34 UTC  |  Lead: 7h 19m
+! MISS Flare: M5.8 at 2026-06-30 12:37 UTC  |  No alert active at onset
 + HIT  Alert: 2026-06-29 18:15 UTC  |  Flare: M5.8 at 2026-06-30 12:37 UTC  |  Lead: 18h 21m
 + HIT  Alert: 2026-06-29 08:28 UTC  |  Flare: M1.3 at 2026-06-30 00:39 UTC  |  Lead: 16h 10m
 + HIT  Alert: 2026-06-28 21:49 UTC  |  Flare: M1.4 at 2026-06-29 21:13 UTC  |  Lead: 23h 23m
@@ -89,22 +76,26 @@ The **Since Fix** column reflects corrected performance.
 ! C-ASSOCIATED Alert: 2026-06-24 15:24 UTC  |  No M1.0+ (C6.6 at 14:53)
 ! C-ASSOCIATED Alert: 2026-06-23 22:28 UTC  |  No M1.0+ (C8.7 at 23:18)
 ! C-ASSOCIATED Alert: 2026-06-21 19:32 UTC  |  No M1.0+ (C2.6 at 22:30)
+! MISS Flare: M6.8 at 2026-06-21 19:17 UTC  |  No alert active at onset
 ! C-ASSOCIATED Alert: 2026-06-21 03:11 UTC  |  No M1.0+ (C2.6 at 18:07)
+! MISS Flare: M2.6 at 2026-06-21 02:25 UTC  |  No alert active at onset
 + HIT  Alert: 2026-06-20 21:46 UTC  |  Flare: M6.8 at 2026-06-21 19:17 UTC  |  Lead: 21h 30m
 + HIT  Alert: 2026-06-20 15:34 UTC  |  Flare: M2.6 at 2026-06-21 02:25 UTC  |  Lead: 10h 50m
+! MISS Flare: M1.0 at 2026-06-20 14:50 UTC  |  No alert active at onset
 + HIT  Alert: 2026-06-20 02:45 UTC  |  Flare: M1.0 at 2026-06-20 14:50 UTC  |  Lead: 12h 04m
+! MISS Flare: M1.3 at 2026-06-20 01:26 UTC  |  No alert active at onset
 + HIT  Alert: 2026-06-19 20:19 UTC  |  Flare: M1.3 at 2026-06-20 01:26 UTC  |  Lead: 5h 06m
 ! C-ASSOCIATED Alert: 2026-06-10 23:49 UTC  |  No M1.0+ (C9.0 at 08:22)
 ! C-ASSOCIATED Alert: 2026-06-09 05:51 UTC  |  No M1.0+ (C3.2 at 06:57)
 ! C-ASSOCIATED Alert: 2026-06-08 06:55 UTC  |  No M1.0+ (C4.5 at 04:16)
 ! C-ASSOCIATED Alert: 2026-06-06 14:27 UTC  |  No M1.0+ (C3.3 at 04:10)
+! MISS Flare: M1.8 at 2026-06-06 13:40 UTC  |  No alert active at onset
 + HIT  Alert: 2026-06-05 16:18 UTC  |  Flare: M1.8 at 2026-06-06 13:40 UTC  |  Lead: 21h 22m
 ! C-ASSOCIATED Alert: 2026-06-04 00:28 UTC  |  No M1.0+ (C2.6 at 03:41)
-! MISS Flare: M7.7 at 2026-06-03 06:49 UTC  |  No alert issued
 + HIT  Alert: 2026-06-02 17:00 UTC  |  Flare: M9.3 at 2026-06-03 01:22 UTC  |  Lead: 8h 21m
-! MISS Flare: M3.3 at 2026-06-02 16:31 UTC  |  No alert issued
+! MISS Flare: M3.3 at 2026-06-02 16:31 UTC  |  No alert active at onset
 + HIT  Alert: 2026-06-02 05:00 UTC  |  Flare: M1.2 at 2026-06-02 09:51 UTC  |  Lead: 4h 50m
-! MISS Flare: M1.2 at 2026-06-02 04:42 UTC  |  No alert issued
+! MISS Flare: M1.2 at 2026-06-02 04:42 UTC  |  No alert active at onset
 ! C-ASSOCIATED Alert: 2026-05-30 07:45 UTC  |  No M1.0+ (C4.7 at 11:45)
 ! C-ASSOCIATED Alert: 2026-05-29 20:00 UTC  |  No M1.0+ (C4.7 at 11:45)
 + HIT  Alert: 2026-05-29 05:15 UTC  |  Flare: M1.1 at 2026-05-29 06:40 UTC  |  Lead: 1h 24m
@@ -114,14 +105,13 @@ The **Since Fix** column reflects corrected performance.
 ! C-ASSOCIATED Alert: 2026-05-23 22:15 UTC  |  No M1.0+ (C4.7 at 23:43)
 ! C-ASSOCIATED Alert: 2026-05-23 05:55 UTC  |  No M1.0+ (C5.5 at 21:57)
 ! C-ASSOCIATED Alert: 2026-05-22 10:15 UTC  |  No M1.0+ (C3.6 at 05:35)
+! MISS Flare: M2.3 at 2026-05-22 10:03 UTC  |  No alert active at onset
 ! C-ASSOCIATED Alert: 2026-05-21 18:30 UTC  |  No M1.0+ (C2.8 at 00:22)
 + HIT  Alert: 2026-05-21 13:30 UTC  |  Flare: M2.3 at 2026-05-22 10:03 UTC  |  Lead: 20h 32m
 ! C-ASSOCIATED Alert: 2026-05-17 21:00 UTC  |  No M1.0+ (C1.9 at 18:10)
 ! C-ASSOCIATED Alert: 2026-05-17 03:45 UTC  |  No M1.0+ (C9.7 at 20:42)
-! MISS Flare: M1.4 at 2026-05-17 03:29 UTC  |  No alert issued
-! MISS Flare: M1.9 at 2026-05-16 17:39 UTC  |  No alert issued
 + HIT  Alert: 2026-05-16 16:08 UTC  |  Flare: M1.3 at 2026-05-16 16:22 UTC  |  Lead: 13min
-! MISS Flare: M1.9 at 2026-05-16 15:50 UTC  |  No alert issued
+! MISS Flare: M1.9 at 2026-05-16 15:50 UTC  |  No alert active at onset
 ! C-ASSOCIATED Alert: 2026-05-15 12:00 UTC  |  No M1.0+ (C9.5 at 16:05)
 ! C-ASSOCIATED Alert: 2026-05-15 03:15 UTC  |  No M1.0+ (C9.5 at 16:05)
 ! C-ASSOCIATED Alert: 2026-05-14 17:31 UTC  |  No M1.0+ (C9.5 at 16:05)
@@ -131,10 +121,12 @@ The **Since Fix** column reflects corrected performance.
 + HIT  Alert: 2026-05-10 09:45 UTC  |  Flare: M5.7 at 2026-05-10 13:19 UTC  |  Lead: 3h 33m
 ! C-ASSOCIATED Alert: 2026-05-08 15:58 UTC  |  No M1.0+ (C2.6 at 20:05)
 ! C-ASSOCIATED Alert: 2026-05-07 14:45 UTC  |  No M1.0+ (C6.0 at 17:44)
+! MISS Flare: M2.6 at 2026-05-07 14:20 UTC  |  No alert active at onset
 + HIT  Alert: 2026-05-07 02:00 UTC  |  Flare: M2.6 at 2026-05-07 14:20 UTC  |  Lead: 12h 19m
 ! C-ASSOCIATED Alert: 2026-05-05 05:45 UTC  |  No M1.0+ (C1.9 at 08:30)
 ! C-ASSOCIATED Alert: 2026-05-04 01:45 UTC  |  No M1.0+ (C1.5 at 11:33)
-! MISS Flare: M1.9 at 2026-05-04 01:12 UTC  |  No alert issued
+! MISS Flare: M1.8 at 2026-05-04 01:13 UTC  |  No alert active at onset
+! MISS Flare: M1.9 at 2026-05-04 01:12 UTC  |  No alert active at onset
 + HIT  Alert: 2026-05-03 07:15 UTC  |  Flare: M1.8 at 2026-05-04 01:13 UTC  |  Lead: 17h 57m
 ! C-ASSOCIATED Alert: 2026-05-02 15:30 UTC  |  No M1.0+ (C8.7 at 18:30)
 ! C-ASSOCIATED Alert: 2026-05-02 11:07 UTC  |  No M1.0+ (C8.7 at 18:30)
@@ -143,27 +135,24 @@ The **Since Fix** column reflects corrected performance.
 ! C-ASSOCIATED Alert: 2026-04-30 00:45 UTC  |  No M1.0+ (C3.7 at 09:35)
 ! C-ASSOCIATED Alert: 2026-04-29 05:00 UTC  |  No M1.0+ (C5.1 at 00:24)
 ! C-ASSOCIATED Alert: 2026-04-28 18:45 UTC  |  No M1.0+ (C5.1 at 04:39)
-! MISS Flare: M1.1 at 2026-04-28 14:03 UTC  |  No alert issued
-! MISS Flare: M1.6 at 2026-04-28 13:44 UTC  |  No alert issued
 + HIT  Alert: 2026-04-28 08:30 UTC  |  Flare: M1.5 at 2026-04-28 13:49 UTC  |  Lead: 5h 18m
 + HIT  Alert: 2026-04-27 23:30 UTC  |  Flare: M1.0 at 2026-04-28 12:17 UTC  |  Lead: 12h 46m
 ! C-ASSOCIATED Alert: 2026-04-27 07:00 UTC  |  No M1.0+ (C5.4 at 07:38)
-! MISS Flare: M1.0 at 2026-04-27 06:39 UTC  |  No alert issued
+! MISS Flare: M1.0 at 2026-04-27 06:39 UTC  |  No alert active at onset
 + HIT  Alert: 2026-04-26 11:30 UTC  |  Flare: M6.0 at 2026-04-26 22:51 UTC  |  Lead: 11h 20m
 + HIT  Alert: 2026-04-26 07:30 UTC  |  Flare: M2.2 at 2026-04-26 19:54 UTC  |  Lead: 12h 23m
 + HIT  Alert: 2026-04-26 00:30 UTC  |  Flare: M1.7 at 2026-04-26 19:18 UTC  |  Lead: 18h 47m
+! MISS Flare: M1.3 at 2026-04-26 00:08 UTC  |  No alert active at onset
 + HIT  Alert: 2026-04-25 19:45 UTC  |  Flare: M1.4 at 2026-04-26 13:54 UTC  |  Lead: 18h 08m
 + HIT  Alert: 2026-04-25 13:30 UTC  |  Flare: M1.3 at 2026-04-26 00:08 UTC  |  Lead: 10h 37m
 + HIT  Alert: 2026-04-25 08:15 UTC  |  Flare: M1.1 at 2026-04-25 14:22 UTC  |  Lead: 6h 06m
-! MISS Flare: M1.3 at 2026-04-25 07:56 UTC  |  No alert issued
+! MISS Flare: M1.3 at 2026-04-25 07:56 UTC  |  No alert active at onset
 + HIT  Alert: 2026-04-24 17:30 UTC  |  Flare: M6.4 at 2026-04-24 17:54 UTC  |  Lead: 23min
-! MISS Flare: M1.7 at 2026-04-24 12:34 UTC  |  No alert issued
 + HIT  Alert: 2026-04-24 08:15 UTC  |  Flare: M1.9 at 2026-04-24 08:57 UTC  |  Lead: 42min
-! MISS Flare: X2.5 at 2026-04-24 08:01 UTC  |  No alert issued
+! MISS Flare: X2.5 at 2026-04-24 08:01 UTC  |  No alert active at onset
 + HIT  Alert: 2026-04-23 23:30 UTC  |  Flare: X2.4 at 2026-04-24 00:51 UTC  |  Lead: 1h 20m
 + HIT  Alert: 2026-04-23 14:00 UTC  |  Flare: M4.9 at 2026-04-23 17:00 UTC  |  Lead: 2h 59m
-! MISS Flare: M1.7 at 2026-04-23 13:42 UTC  |  No alert issued
-! MISS Flare: M4.3 at 2026-04-23 08:40 UTC  |  No alert issued
+! MISS Flare: M1.7 at 2026-04-23 13:42 UTC  |  No alert active at onset
 + HIT  Alert: 2026-04-22 23:30 UTC  |  Flare: M1.2 at 2026-04-23 04:50 UTC  |  Lead: 5h 19m
 + HIT  Alert: 2026-04-22 17:30 UTC  |  Flare: M1.6 at 2026-04-23 04:24 UTC  |  Lead: 10h 53m
 ! C-ASSOCIATED Alert: 2026-04-21 12:01 UTC  |  No M1.0+ (C1.9 at 14:15)
@@ -174,25 +163,27 @@ The **Since Fix** column reflects corrected performance.
 ! C-ASSOCIATED Alert: 2026-04-07 18:34 UTC  |  No M1.0+ (C8.7 at 15:31)
 + HIT  Alert: 2026-04-04 19:51 UTC  |  Flare: M1.0 at 2026-04-04 22:54 UTC  |  Lead: 3h 02m
 + HIT  Alert: 2026-04-04 08:00 UTC  |  Flare: M1.2 at 2026-04-04 11:58 UTC  |  Lead: 3h 57m
+! MISS Flare: M1.7 at 2026-04-04 07:38 UTC  |  No alert active at onset
 + HIT  Alert: 2026-04-03 19:30 UTC  |  Flare: M1.7 at 2026-04-04 07:38 UTC  |  Lead: 12h 07m
 + HIT  Alert: 2026-04-03 06:00 UTC  |  Flare: M7.5 at 2026-04-04 01:07 UTC  |  Lead: 19h 06m
 + HIT  Alert: 2026-04-03 01:15 UTC  |  Flare: M1.3 at 2026-04-03 12:46 UTC  |  Lead: 11h 30m
 + HIT  Alert: 2026-04-02 18:15 UTC  |  Flare: M1.3 at 2026-04-03 07:45 UTC  |  Lead: 13h 29m
+! MISS Flare: M3.5 at 2026-04-02 17:23 UTC  |  No alert active at onset
 + HIT  Alert: 2026-04-01 20:15 UTC  |  Flare: M3.5 at 2026-04-02 17:23 UTC  |  Lead: 21h 07m
 ! C-ASSOCIATED Alert: 2026-04-01 13:57 UTC  |  No M1.0+ (C8.1 at 19:47)
 ! C-ASSOCIATED Alert: 2026-03-30 03:15 UTC  |  No M1.0+ (C2.1 at 20:40)
-! MISS Flare: X1.4 at 2026-03-30 02:47 UTC  |  No alert issued
+! MISS Flare: X1.4 at 2026-03-30 02:47 UTC  |  No alert active at onset
 ! C-ASSOCIATED Alert: 2026-03-28 03:15 UTC  |  No M1.0+ (C4.1 at 11:18)
 ! C-ASSOCIATED Alert: 2026-03-27 10:05 UTC  |  No M1.0+ (C3.5 at 18:17)
 ! C-ASSOCIATED Alert: 2026-03-26 06:30 UTC  |  No M1.0+ (C3.6 at 02:55)
-! MISS Flare: M3.9 at 2026-03-26 06:11 UTC  |  No alert issued
+! MISS Flare: M3.9 at 2026-03-26 06:11 UTC  |  No alert active at onset
 ! C-ASSOCIATED Alert: 2026-03-25 00:30 UTC  |  No M1.0+ (C2.2 at 04:10)
 ! C-ASSOCIATED Alert: 2026-03-24 17:45 UTC  |  No M1.0+ (C3.7 at 00:14)
 ! C-ASSOCIATED Alert: 2026-03-23 00:00 UTC  |  No M1.0+ (C3.2 at 00:24)
 ! C-ASSOCIATED Alert: 2026-03-18 08:45 UTC  |  No M1.0+ (C3.6 at 12:53)
 ! C-ASSOCIATED Alert: 2026-03-18 01:25 UTC  |  No M1.0+ (C3.6 at 12:53)
 ! C-ASSOCIATED Alert: 2026-03-16 12:15 UTC  |  No M1.0+ (C5.9 at 14:39)
-! MISS Flare: M2.7 at 2026-03-16 12:00 UTC  |  No alert issued
+! MISS Flare: M2.7 at 2026-03-16 12:00 UTC  |  No alert active at onset
 ! C-ASSOCIATED Alert: 2026-03-15 10:00 UTC  |  No M1.0+ (C1.1 at 15:00)
 ! C-ASSOCIATED Alert: 2026-03-13 20:30 UTC  |  No M1.0+ (C7.4 at 20:33)
 ! C-ASSOCIATED Alert: 2026-03-13 15:27 UTC  |  No M1.0+ (C8.9 at 20:09)
@@ -218,6 +209,7 @@ The **Since Fix** column reflects corrected performance.
 ! C-ASSOCIATED Alert: 2026-02-26 19:24 UTC  |  No M1.0+ (C3.5 at 12:46)
 ! C-ASSOCIATED Alert: 2026-02-26 09:21 UTC  |  No M1.0+ (C6.3 at 18:56)
 - FALSE Alert: 2026-02-25 15:59 UTC  |  No M1.0+ flare within 24h
+! MISS Flare: M2.3 at 2026-02-25 15:35 UTC  |  No alert active at onset
 + HIT  Alert: 2026-02-25 05:27 UTC  |  Flare: M2.3 at 2026-02-25 15:35 UTC  |  Lead: 10h 07m
 - FALSE Alert: 2026-02-23 11:53 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-02-22 07:06 UTC  |  No M1.0+ flare within 24h
@@ -238,16 +230,20 @@ The **Since Fix** column reflects corrected performance.
 + HIT  Alert: 2026-02-15 08:02 UTC  |  Flare: M2.4 at 2026-02-16 04:03 UTC  |  Lead: 20h
 ! C-ASSOCIATED Alert: 2026-02-14 11:45 UTC  |  No M1.0+ (C1.2 at 07:19)
 ! C-ASSOCIATED Alert: 2026-02-13 11:49 UTC  |  No M1.0+ (C6.0 at 11:02)
+! MISS Flare: M1.0 at 2026-02-13 08:28 UTC  |  No alert active at onset
 - FALSE Alert: 2026-02-13 00:00 UTC  |  No M1.0+ flare within 24h
 + HIT  Alert: 2026-02-12 18:10 UTC  |  Flare: M1.0 at 2026-02-13 08:28 UTC  |  Lead: 14h 17m
+! MISS Flare: M1.4 at 2026-02-12 02:29 UTC  |  No alert active at onset
 + HIT  Alert: 2026-02-11 13:00 UTC  |  Flare: M1.4 at 2026-02-12 02:29 UTC  |  Lead: 13h 29m
+! MISS Flare: M1.4 at 2026-02-11 12:47 UTC  |  No alert active at onset
 + HIT  Alert: 2026-02-11 07:50 UTC  |  Flare: M1.4 at 2026-02-11 12:47 UTC  |  Lead: 4h 57m
-! MISS Flare: M1.3 at 2026-02-11 00:50 UTC  |  No alert issued
-! MISS Flare: M1.1 at 2026-02-11 00:29 UTC  |  No alert issued
-! MISS Flare: M1.2 at 2026-02-10 23:56 UTC  |  No alert issued
+! MISS Flare: M1.3 at 2026-02-11 00:50 UTC  |  No alert active at onset
+! MISS Flare: M1.1 at 2026-02-11 00:29 UTC  |  No alert active at onset
+! MISS Flare: M1.2 at 2026-02-10 23:56 UTC  |  No alert active at onset
 ! C-ASSOCIATED Alert: 2026-02-09 18:17 UTC  |  No M1.0+ (C9.2 at 22:53)
 + HIT  Alert: 2026-02-09 01:57 UTC  |  Flare: M2.8 at 2026-02-09 02:14 UTC  |  Lead: 17min
 + HIT  Alert: 2026-02-08 11:26 UTC  |  Flare: M1.7 at 2026-02-08 11:32 UTC  |  Lead: 6min
+! MISS Flare: M1.8 at 2026-02-08 11:13 UTC  |  No alert active at onset
 + HIT  Alert: 2026-02-08 04:39 UTC  |  Flare: M1.8 at 2026-02-08 11:13 UTC  |  Lead: 6h 34m
 ```
 

@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-07-07T20:24:13Z",
+  "updated_utc": "2026-07-07T20:37:17Z",
   "total_alerts": 166,
   "verified_hits": 59,
   "verified_false": 106,
@@ -11,8 +11,20 @@
   "c_class_associated": 96,
   "avg_lead_minutes": 535.8,
   "median_lead_minutes": 501.1,
-  "m_class_total_flares": 111,
-  "m_class_coverage": 0.505,
+  "m_class_total_flares": 106,
+  "m_class_covered": 61,
+  "m_class_coverage": 0.575,
+  "x_class_total_flares": 5,
+  "x_class_covered": 2,
+  "x_class_coverage": 0.4,
+  "methodology": {
+    "version": 2,
+    "since": "2026-07-07",
+    "hit": "first >=M1.0 flare within 24h of alert onset",
+    "false_alert": "no >=M1.0 flare within 24h of alert onset",
+    "coverage": "flare onset falls within an active alert window",
+    "note": "Before 2026-07-07, coverage used greedy 1:1 alert-flare matching, which undercounted coverage during flare storms. Historical verified.jsonl records are preserved unchanged."
+  },
   "since_fix": {
     "date": "2026-03-21",
     "total_alerts": 109,
@@ -24,7 +36,11 @@
     "c_class_associated": 56,
     "avg_lead_minutes": 537.8,
     "median_lead_minutes": 501.1,
-    "m_class_total_flares": 99,
-    "m_class_coverage": 0.485
+    "m_class_total_flares": 94,
+    "m_class_covered": 58,
+    "m_class_coverage": 0.617,
+    "x_class_total_flares": 5,
+    "x_class_covered": 2,
+    "x_class_coverage": 0.4
   }
 }
