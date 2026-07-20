@@ -3,7 +3,7 @@
 Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-07-20 22:34 UTC | Status: RED   | P(M1.0+ within 24h): 44.1%
+2026-07-20 23:07 UTC | Status: RED   | P(M1.0+ within 24h): 50.8%
 ```
 
 ---
@@ -37,7 +37,7 @@ The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 55.9% (62/111) | **59.6%** (59/99) |
+| M-class coverage | 56.2% (63/112) | **60.0%** (60/100) |
 | X-class coverage | 40% (2/5) | **40%** (2/5) |
 | X-class hits | 3 | **3** |
 | Precision | 34.9% | **44.5%** |
