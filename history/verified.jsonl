@@ -191,3 +191,4 @@
 {"alert_time": "2026-08-02T01:38:24.791418+00:00", "c_class": "C6.3", "c_class_time": "2026-08-02T05:19:00Z", "result": "false_alert", "verified_utc": "2026-08-03T02:39:03Z"}
 {"alert_time": "2026-08-02T06:14:12.168460+00:00", "result": "false_alert", "verified_utc": "2026-08-03T06:37:32Z"}
 {"alert_time": "2026-08-14T07:18:12.706106+00:00", "c_class": "C4.3", "c_class_time": "2026-08-14T21:45:00Z", "result": "false_alert", "verified_utc": "2026-08-15T07:51:29Z"}
+{"alert_time": "2026-08-14T22:18:11.568779+00:00", "c_class": "C3.3", "c_class_time": "2026-08-15T08:09:00Z", "result": "false_alert", "verified_utc": "2026-08-15T22:23:14Z"}
