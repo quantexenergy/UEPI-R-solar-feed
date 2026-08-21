@@ -8,20 +8,20 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | Metric | Value |
 |--------|-------|
 | Verified hits | **69** |
-| M-class coverage | **55.0%** (66/120 flares with alert active at onset) |
+| M-class coverage | **55.4%** (67/121 flares with alert active at onset) |
 | X-class coverage | **40.0%** (2/5 flares with alert active at onset) |
 | False alerts | 131/200 |
 | C-class associated | 119/131 false alerts |
 | Median lead time | **7h 19m** |
 | Pending verification | 1 |
-| Last updated | 2026-08-21T10:08:39Z |
+| Last updated | 2026-08-21T10:24:22Z |
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 55.0% (66/120) | **58.3%** (63/108) |
+| M-class coverage | 55.4% (67/121) | **58.7%** (64/109) |
 | X-class coverage | 40% (2/5) | **40%** (2/5) |
 | X-class hits | 3 | **3** |
 | Precision | 34.5% | **42.4%** |
