@@ -3,7 +3,7 @@
 Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-09-05 20:08 UTC | Status: RED
+2026-09-05 20:22 UTC | Status: RED
 ```
 
 ---
