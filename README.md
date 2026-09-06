@@ -3,7 +3,7 @@
 Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-09-06 18:25 UTC | Status: QUIET | P(M1.0+ within 24h): 7.5%
+2026-09-06 18:29 UTC | Status: QUIET | P(M1.0+ within 24h): 7.5%
 ```
 
 ---
@@ -37,7 +37,9 @@ The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 54.5% (72/132) | **57.5%** (69/120) |
+| M-class coverage (at onset) | 54.5% (72/132) | **57.5%** (69/120) |
+| M-class advance-notice rate¹ | 90.9% (120/132) | **93.3%** (112/120) |
+| Misses: expired-early / late / blind | 50/10/3 | **45/9/0** |
 | X-class coverage | 40% (2/5) | **40%** (2/5) |
 | X-class hits | 3 | **3** |
 | Precision | 35.6% | **43.1%** |
@@ -53,17 +55,24 @@ The **Since Fix** column reflects corrected performance.
 - **Hit:** First >= M1.0 flare within hazard window
 - **False alert:** No >= M1.0 flare within 24h
 - **Miss:** Flare with no active alert at onset
-- **Coverage:** Fraction of flares whose onset fell within an active alert window
+- **Coverage (primary):** Fraction of flares whose onset fell within an active alert window
+- **Advance-notice rate¹:** Fraction of flares covered at onset OR preceded by an alert start within 24h
+- **Miss mechanisms:** expired-early (alert started ≤24h before onset, window closed too soon) / late (alert ≤6h after) / blind (neither)
 - **Pending:** Hazard window not yet expired
 
 All alerts are timestamped via Git commits prior to flare occurrence.
 
-> **Methodology note (2026-07-07):** Coverage and miss determination now
-> implement the documented rules above directly (alert active at flare onset).
-> Before this date, published coverage used a stricter greedy 1:1 alert-flare
-> matching that undercounted coverage during flare storms, and some flares that
-> began during an active alert were displayed as "no alert issued." Historical
-> `verified.jsonl` records are preserved unchanged; no past records were rewritten.
+> **Methodology v3 (2026-09-06):** Added the advance-notice rate and miss-mechanism
+> breakdown. Live operation through the declining solar cycle showed at-onset coverage
+> falling in isolated-flare regimes while advance warnings stayed stable — the misses are
+> overwhelmingly early warnings whose alert windows expired before the flare arrived, not
+> blind spots. The two metrics separate warning skill from alert-window timing. ¹Advance
+> notice uses the same 24h window as the hit rule and is NOT comparable to the preprint's
+> 1:1 hazard-window coverage (64–71%).
+>
+> **Methodology v2 (2026-07-07):** Coverage and miss determination implement the documented
+> rules directly (alert active at flare onset), replacing greedy 1:1 matching that
+> undercounted storms. Historical `verified.jsonl` records preserved unchanged in all versions.
 
 Full log: [`TRACK_RECORD.md`](TRACK_RECORD.md)
 

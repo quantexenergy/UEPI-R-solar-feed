@@ -8,20 +8,26 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | Metric | Value |
 |--------|-------|
 | Verified hits | **77** |
-| M-class coverage | **54.5%** (72/132 flares with alert active at onset) |
-| X-class coverage | **40.0%** (2/5 flares with alert active at onset) |
+| M-class coverage (alert active at onset) | **54.5%** (72/132) |
+| M-class advance-notice rate¹ | **90.9%** (120/132) |
+| X-class coverage (at onset) | **40.0%** (2/5) |
+| Miss breakdown | 50 early-warning-expired · 10 late · **3 blind** |
 | False alerts | 139/216 |
 | C-class associated | 127/139 false alerts |
 | Median lead time | **7h 19m** |
 | Pending verification | 1 |
-| Last updated | 2026-09-06T18:25:10Z |
+| Last updated | 2026-09-06T18:29:27Z |
+
+¹ *Advance notice = alert active at onset OR an alert started within the prior 24h (same window as the hit rule). Separates warning delivery from alert-window timing; not comparable to the preprint's 1:1 hazard-window coverage.*
 
 A baseline-window bug inflated false alerts before March 21, 2026.
 The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage | 54.5% (72/132) | **57.5%** (69/120) |
+| M-class coverage (at onset) | 54.5% (72/132) | **57.5%** (69/120) |
+| M-class advance-notice rate¹ | 90.9% (120/132) | **93.3%** (112/120) |
+| Misses: expired-early / late / blind | 50/10/3 | **45/9/0** |
 | X-class coverage | 40% (2/5) | **40%** (2/5) |
 | X-class hits | 3 | **3** |
 | Precision | 35.6% | **43.1%** |

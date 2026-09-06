@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-09-06T18:25:10Z",
+  "updated_utc": "2026-09-06T18:29:27Z",
   "total_alerts": 217,
   "verified_hits": 77,
   "verified_false": 139,
@@ -17,13 +17,24 @@
   "x_class_total_flares": 5,
   "x_class_covered": 2,
   "x_class_coverage": 0.4,
+  "m_class_advance_noticed": 120,
+  "m_class_advance_notice_rate": 0.909,
+  "x_class_advance_noticed": 4,
+  "x_class_advance_notice_rate": 0.8,
+  "miss_mechanisms": {
+    "expired_early": 50,
+    "late_alert": 10,
+    "blind": 3
+  },
   "methodology": {
-    "version": 2,
-    "since": "2026-07-07",
+    "version": 3,
+    "since": "2026-09-06",
     "hit": "first >=M1.0 flare within 24h of alert onset",
     "false_alert": "no >=M1.0 flare within 24h of alert onset",
-    "coverage": "flare onset falls within an active alert window",
-    "note": "Before 2026-07-07, coverage used greedy 1:1 alert-flare matching, which undercounted coverage during flare storms. Historical verified.jsonl records are preserved unchanged."
+    "coverage": "flare onset falls within an active alert window (primary metric)",
+    "advance_notice": "flare covered at onset OR an alert started within the 24h before onset \u2014 delivery/awareness view using the same 24h window as the hit rule. NOT comparable to the preprint's 1:1 hazard-window coverage (64-71%).",
+    "miss_mechanisms": "non-covered flares classified: expired_early (alert started <=24h before onset but window closed before it), late_alert (alert started <=6h after onset), blind (neither).",
+    "note": "v2 (2026-07-07): replaced greedy 1:1 matching with the documented at-onset rule. v3 (2026-09-06): added advance-notice rate and miss-mechanism breakdown after live operations showed at-onset coverage declining in the isolated-flare regime of the falling solar cycle while advance warnings remained stable \u2014 the two metrics separate warning skill from alert-window timing. Historical verified.jsonl records preserved unchanged in all versions."
   },
   "since_fix": {
     "date": "2026-03-21",
@@ -39,8 +50,17 @@
     "m_class_total_flares": 120,
     "m_class_covered": 69,
     "m_class_coverage": 0.575,
+    "m_class_advance_noticed": 112,
+    "m_class_advance_notice_rate": 0.933,
     "x_class_total_flares": 5,
     "x_class_covered": 2,
-    "x_class_coverage": 0.4
+    "x_class_coverage": 0.4,
+    "x_class_advance_noticed": 4,
+    "x_class_advance_notice_rate": 0.8,
+    "miss_mechanisms": {
+      "expired_early": 45,
+      "late_alert": 9,
+      "blind": 0
+    }
   }
 }
