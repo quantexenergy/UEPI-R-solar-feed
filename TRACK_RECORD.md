@@ -16,7 +16,7 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | C-class associated | 128/140 false alerts |
 | Median lead time | **7h 19m** |
 | Pending verification | 1 |
-| Last updated | 2026-09-09T06:48:21Z |
+| Last updated | 2026-09-09T07:09:43Z |
 
 ¹ *Advance notice = alert active at onset OR an alert started within the prior 24h (same window as the hit rule). Separates warning delivery from alert-window timing; not comparable to the preprint's 1:1 hazard-window coverage.*
 
