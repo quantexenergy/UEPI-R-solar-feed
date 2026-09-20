@@ -12,11 +12,10 @@ Each alert is verified 24 hours after it fires. Git commit history proves every 
 | M-class advance-notice rate¹ | **90.9%** (120/132) |
 | X-class coverage (at onset) | **40.0%** (2/5) |
 | Miss breakdown | 50 early-warning-expired · 10 late · **3 blind** |
-| False alerts | 142/219 |
-| C-class associated | 129/142 false alerts |
+| False alerts | 143/220 |
+| C-class associated | 129/143 false alerts |
 | Median lead time | **7h 19m** |
-| Pending verification | 1 |
-| Last updated | 2026-09-20T18:57:29Z |
+| Last updated | 2026-09-20T21:13:31Z |
 
 ¹ *Advance notice = alert active at onset OR an alert started within the prior 24h (same window as the hit rule). Separates warning delivery from alert-window timing; not comparable to the preprint's 1:1 hazard-window coverage.*
 
@@ -30,14 +29,15 @@ The **Since Fix** column reflects corrected performance.
 | Misses: expired-early / late / blind | 50/10/3 | **45/9/0** |
 | X-class coverage | 40% (2/5) | **40%** (2/5) |
 | X-class hits | 3 | **3** |
-| Precision | 35.2% | **42.3%** |
-| False alerts | 142 | **94** |
+| Precision | 35.0% | **42.1%** |
+| False alerts | 143 | **95** |
 | Median lead time | 7h 19m | **7h 19m** |
-| Alerts | 219 | 163 |
+| Alerts | 220 | 164 |
 
 ## Event Log
 
 ```diff
+- FALSE Alert: 2026-09-19 19:28 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-09-12 17:33 UTC  |  No M1.0+ flare within 24h
 ! C-ASSOCIATED Alert: 2026-09-08 23:47 UTC  |  No M1.0+ (C3.2 at 10:23)
 ! C-ASSOCIATED Alert: 2026-09-06 10:47 UTC  |  No M1.0+ (C1.1 at 13:15)
