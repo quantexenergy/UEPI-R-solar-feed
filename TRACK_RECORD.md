@@ -15,7 +15,7 @@ Each alert is verified 24 hours after it fires. Alerts issued by the live pipeli
 | False alerts | 137/215 |
 | C-class associated | 125/137 false alerts |
 | Median lead time | **6h 04m** |
-| Last updated | 2026-09-26T10:16:23Z |
+| Last updated | 2026-09-26T10:31:22Z |
 
 ¹ *Advance notice = alert active at onset OR an alert started within the prior 24h (same window as the hit rule), including alerts whose window had already expired before the flare. Separates warning delivery from alert-window timing; not comparable to the preprint's 1:1 hazard-window coverage. The stricter "alert active at onset" coverage is the row above.*
 
