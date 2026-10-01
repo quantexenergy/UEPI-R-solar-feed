@@ -219,3 +219,4 @@
 {"alert_time": "2026-09-12T17:33:52.038274+00:00", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-09-25T04:00:00Z"}
 {"alert_time": "2026-09-19T19:28:01.036036+00:00", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-09-25T04:00:00Z"}
 {"alert_time": "2026-09-20T23:15:56.947575+00:00", "c_class": "C1.2", "c_class_time": "2026-09-21T06:21:00Z", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-09-25T04:00:00Z"}
+{"alert_time": "2026-09-30T03:01:23.865315+00:00", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-10-01T03:15:51Z"}
