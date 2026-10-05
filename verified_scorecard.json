@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-05T19:00:53Z",
+  "updated_utc": "2026-10-05T19:21:08Z",
   "total_alerts": 217,
   "verified_hits": 78,
   "verified_false": 138,
@@ -13,19 +13,19 @@
   "median_lead_minutes": 364.9,
   "excluded_backfill_alerts": 6,
   "live_start_utc": "2026-02-12T00:00:00+00:00",
-  "m_class_total_flares": 124,
+  "m_class_total_flares": 125,
   "m_class_covered": 70,
-  "m_class_coverage": 0.565,
+  "m_class_coverage": 0.56,
   "x_class_total_flares": 6,
   "x_class_covered": 3,
   "x_class_coverage": 0.5,
   "m_class_advance_noticed": 115,
-  "m_class_advance_notice_rate": 0.927,
+  "m_class_advance_notice_rate": 0.92,
   "x_class_advance_noticed": 5,
   "x_class_advance_notice_rate": 0.833,
   "miss_mechanisms": {
     "expired_early": 47,
-    "late_alert": 10,
+    "late_alert": 11,
     "blind": 0
   },
   "methodology": {
@@ -51,11 +51,11 @@
     "c_class_associated": 86,
     "avg_lead_minutes": 468.3,
     "median_lead_minutes": 336.4,
-    "m_class_total_flares": 119,
+    "m_class_total_flares": 120,
     "m_class_covered": 69,
-    "m_class_coverage": 0.58,
+    "m_class_coverage": 0.575,
     "m_class_advance_noticed": 111,
-    "m_class_advance_notice_rate": 0.933,
+    "m_class_advance_notice_rate": 0.925,
     "x_class_total_flares": 6,
     "x_class_covered": 3,
     "x_class_coverage": 0.5,
@@ -63,7 +63,7 @@
     "x_class_advance_notice_rate": 0.833,
     "miss_mechanisms": {
       "expired_early": 44,
-      "late_alert": 9,
+      "late_alert": 10,
       "blind": 0
     }
   }
