@@ -220,3 +220,4 @@
 {"alert_time": "2026-09-19T19:28:01.036036+00:00", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-09-25T04:00:00Z"}
 {"alert_time": "2026-09-20T23:15:56.947575+00:00", "c_class": "C1.2", "c_class_time": "2026-09-21T06:21:00Z", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-09-25T04:00:00Z"}
 {"alert_time": "2026-09-30T03:01:23.865315+00:00", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-10-01T03:15:51Z"}
+{"alert_active_at_flare": true, "alert_time": "2026-10-05T18:57:11.632058+00:00", "flare_class": "M1.4", "flare_source": "authoritative", "flare_time": "2026-10-06T05:38:00Z", "lead_minutes": 640.8, "live": true, "methodology_version": 4, "provenance": "live", "result": "hit", "verified_utc": "2026-10-06T19:01:04Z"}
