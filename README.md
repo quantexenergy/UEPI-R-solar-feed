@@ -3,7 +3,7 @@
 Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-10-09 09:25 UTC | Status: RED   | P(M1.0+ within 24h): 24.5%
+2026-10-09 09:31 UTC | Status: RED   | P(M1.0+ within 24h): 5.5%
 ```
 
 ---
