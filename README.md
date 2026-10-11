@@ -3,7 +3,7 @@
 Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-10-10 23:48 UTC | Status: QUIET | P(M1.0+ within 24h): 37.7%
+2026-10-11 00:00 UTC | Status: QUIET | P(M1.0+ within 24h): 35.7%
 ```
 
 ---
@@ -44,11 +44,11 @@ The **Since Fix** column reflects corrected performance.
 | Misses: expired-early / late / blind | 48/12/0 | **45/11/0** |
 | X-class coverage | 50% (3/6) | **50%** (3/6) |
 | X-class hits | 3 | **3** |
-| Precision | 36.2% | **45.1%** |
-| False alerts/day | 0.58 | **0.47** |
-| Median lead time | 6.2h | **5.8h** |
-| Alerts | 229 | 173 |
-| Pending | 3 | |
+| Precision | 36.5% | **45.4%** |
+| False alerts/day | 0.57 | **0.47** |
+| Median lead time | 6.3h | **6.1h** |
+| Alerts | 230 | 174 |
+| Pending | 2 | |
 
 ### Verification Rules
 
@@ -79,6 +79,7 @@ Live alerts (onset on/after 2026-02-12) are timestamped via Git commits prior to
 Full log: [`TRACK_RECORD.md`](TRACK_RECORD.md)
 
 ```diff
++ HIT  Alert: 2026-10-10 00:00 UTC  |  Flare: M1.2 at 2026-10-10 13:56 UTC  |  Lead: 13h 55m
 + HIT  Alert: 2026-10-09 13:30 UTC  |  Flare: M1.3 at 2026-10-09 13:55 UTC  |  Lead: 24min
 + HIT  Alert: 2026-10-09 05:45 UTC  |  Flare: M1.3 at 2026-10-09 13:55 UTC  |  Lead: 8h 09m
 + HIT  Alert: 2026-10-08 22:51 UTC  |  Flare: M1.3 at 2026-10-09 13:55 UTC  |  Lead: 15h 03m
