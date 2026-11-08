@@ -7,16 +7,16 @@ Each alert is verified 24 hours after it fires. Alerts issued by the live pipeli
 
 | Metric | Value |
 |--------|-------|
-| Verified hits | **87** |
-| M-class coverage (alert active at onset) | **57.0%** (73/128) |
-| M-class advance-notice rate¹ | **92.2%** (118/128) |
+| Verified hits | **88** |
+| M-class coverage (alert active at onset) | **56.6%** (73/129) |
+| M-class advance-notice rate¹ | **92.2%** (119/129) |
 | X-class coverage (at onset) | **50.0%** (3/6) |
-| Miss breakdown | 47 early-warning-expired · 11 late · **0 blind** |
-| False alerts | 149/236 |
+| Miss breakdown | 48 early-warning-expired · 11 late · **0 blind** |
+| False alerts | 149/237 |
 | C-class associated | 125/149 false alerts |
-| Median lead time | **6h 23m** |
+| Median lead time | **6h 18m** |
 | Pending verification | 3 |
-| Last updated | 2026-11-08T07:46:11Z |
+| Last updated | 2026-11-08T08:01:11Z |
 
 ¹ *Advance notice = alert active at onset OR an alert started within the prior 24h (same window as the hit rule), including alerts whose window had already expired before the flare. Separates warning delivery from alert-window timing; not comparable to the preprint's 1:1 hazard-window coverage. The stricter "alert active at onset" coverage is the row above.*
 
@@ -25,19 +25,20 @@ The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage (at onset) | 57.0% (73/128) | **58.5%** (72/123) |
-| M-class advance-notice rate¹ | 92.2% (118/128) | **92.7%** (114/123) |
-| Misses: expired-early / late / blind | 47/11/0 | **44/10/0** |
+| M-class coverage (at onset) | 56.6% (73/129) | **58.1%** (72/124) |
+| M-class advance-notice rate¹ | 92.2% (119/129) | **92.7%** (115/124) |
+| Misses: expired-early / late / blind | 48/11/0 | **45/10/0** |
 | X-class coverage | 50% (3/6) | **50%** (3/6) |
 | X-class hits | 3 | **3** |
-| Precision | 36.9% | **44.1%** |
+| Precision | 37.1% | **44.4%** |
 | False alerts | 149 | **104** |
-| Median lead time | 6h 23m | **6h 04m** |
-| Alerts | 236 | 186 |
+| Median lead time | 6h 18m | **6h 03m** |
+| Alerts | 237 | 187 |
 
 ## Event Log
 
 ```diff
++ HIT  Alert: 2026-11-07 07:46 UTC  |  Flare: M1.2 at 2026-11-07 12:26 UTC  |  Lead: 4h 39m
 + HIT  Alert: 2026-11-07 01:01 UTC  |  Flare: M1.2 at 2026-11-07 12:26 UTC  |  Lead: 11h 24m
 - FALSE Alert: 2026-11-06 03:01 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-11-05 18:46 UTC  |  No M1.0+ flare within 24h
