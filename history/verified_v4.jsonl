@@ -251,3 +251,4 @@
 {"alert_time": "2026-11-10T08:31:17.663864+00:00", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-11-11T08:31:19Z"}
 {"alert_time": "2026-11-11T21:15:47.506532+00:00", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-11-12T21:30:45Z"}
 {"alert_time": "2026-11-12T03:45:49.418648+00:00", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-11-13T04:00:41Z"}
+{"alert_time": "2026-11-12T11:30:44.721225+00:00", "live": true, "methodology_version": 4, "provenance": "live", "result": "false_alert", "verified_utc": "2026-11-13T11:34:46Z"}

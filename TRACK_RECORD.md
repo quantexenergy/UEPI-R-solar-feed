@@ -12,11 +12,10 @@ Each alert is verified 24 hours after it fires. Alerts issued by the live pipeli
 | M-class advance-notice rate¹ | **92.4%** (121/131) |
 | X-class coverage (at onset) | **50.0%** (3/6) |
 | Miss breakdown | 49 early-warning-expired · 11 late · **0 blind** |
-| False alerts | 155/247 |
-| C-class associated | 125/155 false alerts |
+| False alerts | 156/248 |
+| C-class associated | 125/156 false alerts |
 | Median lead time | **6h 09m** |
-| Pending verification | 1 |
-| Last updated | 2026-11-13T11:30:38Z |
+| Last updated | 2026-11-13T11:34:46Z |
 
 ¹ *Advance notice = alert active at onset OR an alert started within the prior 24h (same window as the hit rule), including alerts whose window had already expired before the flare. Separates warning delivery from alert-window timing; not comparable to the preprint's 1:1 hazard-window coverage. The stricter "alert active at onset" coverage is the row above.*
 
@@ -30,14 +29,15 @@ The **Since Fix** column reflects corrected performance.
 | Misses: expired-early / late / blind | 49/11/0 | **46/10/0** |
 | X-class coverage | 50% (3/6) | **50%** (3/6) |
 | X-class hits | 3 | **3** |
-| Precision | 37.2% | **44.2%** |
-| False alerts | 155 | **110** |
+| Precision | 37.1% | **43.9%** |
+| False alerts | 156 | **111** |
 | Median lead time | 6h 09m | **5h 36m** |
-| Alerts | 247 | 197 |
+| Alerts | 248 | 198 |
 
 ## Event Log
 
 ```diff
+- FALSE Alert: 2026-11-12 11:30 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-11-12 03:45 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-11-11 21:15 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-11-10 08:31 UTC  |  No M1.0+ flare within 24h
