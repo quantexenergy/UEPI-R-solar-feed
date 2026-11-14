@@ -8,15 +8,14 @@ Each alert is verified 24 hours after it fires. Alerts issued by the live pipeli
 | Metric | Value |
 |--------|-------|
 | Verified hits | **92** |
-| M-class coverage (alert active at onset) | **55.8%** (72/129) |
-| M-class advance-notice rate¹ | **92.2%** (119/129) |
+| M-class coverage (alert active at onset) | **55.5%** (71/128) |
+| M-class advance-notice rate¹ | **92.2%** (118/128) |
 | X-class coverage (at onset) | **50.0%** (3/6) |
 | Miss breakdown | 49 early-warning-expired · 11 late · **0 blind** |
-| False alerts | 156/248 |
-| C-class associated | 125/156 false alerts |
+| False alerts | 157/249 |
+| C-class associated | 125/157 false alerts |
 | Median lead time | **6h 09m** |
-| Pending verification | 1 |
-| Last updated | 2026-11-14T18:16:11Z |
+| Last updated | 2026-11-14T18:31:08Z |
 
 ¹ *Advance notice = alert active at onset OR an alert started within the prior 24h (same window as the hit rule), including alerts whose window had already expired before the flare. Separates warning delivery from alert-window timing; not comparable to the preprint's 1:1 hazard-window coverage. The stricter "alert active at onset" coverage is the row above.*
 
@@ -25,19 +24,20 @@ The **Since Fix** column reflects corrected performance.
 
 | Metric | Lifetime | Since Fix (Mar 21) |
 |--------|:--------:|:------------------:|
-| M-class coverage (at onset) | 55.8% (72/129) | **57.3%** (71/124) |
-| M-class advance-notice rate¹ | 92.2% (119/129) | **92.7%** (115/124) |
+| M-class coverage (at onset) | 55.5% (71/128) | **56.9%** (70/123) |
+| M-class advance-notice rate¹ | 92.2% (118/128) | **92.7%** (114/123) |
 | Misses: expired-early / late / blind | 49/11/0 | **46/10/0** |
 | X-class coverage | 50% (3/6) | **50%** (3/6) |
 | X-class hits | 3 | **3** |
-| Precision | 37.1% | **43.9%** |
-| False alerts | 156 | **111** |
+| Precision | 36.9% | **43.7%** |
+| False alerts | 157 | **112** |
 | Median lead time | 6h 09m | **5h 36m** |
-| Alerts | 248 | 198 |
+| Alerts | 249 | 199 |
 
 ## Event Log
 
 ```diff
+- FALSE Alert: 2026-11-13 18:30 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-11-12 11:30 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-11-12 03:45 UTC  |  No M1.0+ flare within 24h
 - FALSE Alert: 2026-11-11 21:15 UTC  |  No M1.0+ flare within 24h
