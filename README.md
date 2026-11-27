@@ -3,7 +3,7 @@
 Continuous M/X-Class Flare Risk Assessment (GOES XRS Only)
 
 ```
-2026-11-27 18:46 UTC | Status: QUIET | P(M1.0+ within 24h): 7.5%
+2026-11-27 19:00 UTC | Status: RED   | P(M1.0+ within 24h): 7.5%
 ```
 
 ---
@@ -48,6 +48,7 @@ The **Since Fix** column reflects corrected performance.
 | False alerts/day | 0.56 | **0.48** |
 | Median lead time | 6.2h | **5.8h** |
 | Alerts | 266 | 210 |
+| Pending | 1 | |
 
 ### Verification Rules
 
